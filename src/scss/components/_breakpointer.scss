@@ -1,0 +1,13 @@
+.breakpointer {
+  @include breakpointer;
+
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.8rem;
+
+  background-color: $grey-20;
+  color: $white;
+}
