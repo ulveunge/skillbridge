@@ -5,11 +5,15 @@
   margin: 0 auto;
 
   @include breakpoint(max, 1440px) {
+    padding: 0 8rem;
+  }
+
+  @include breakpoint(max, xlarge) {
     padding: 0 2rem;
   }
 
   @include breakpoint(max, medium) {
-    padding: 0 1.8rem;
+    padding: 0 1.6em;
   }
 }
 
@@ -189,6 +193,20 @@
 
   &::after {
     background-color: $white-97;
+  }
+}
+
+.text-link--orange-underline {
+  &::after {
+    bottom: -1px;
+    height: 2px;
+    background-color: $orange-70;
+  }
+}
+
+.text-link--orange-underline:hover {
+  &::after {
+    background-color: $orange-70;
   }
 }
 

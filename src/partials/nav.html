@@ -35,25 +35,36 @@
   </ul>
   <div class="nav__mobile-menu" data-controller="mobile-nav">
     <button class="nav__mobile-menu-btn" data-action="click->mobile-nav#toggle">
-      <svg>
-        <use xlink:href="icons.svg#burger-menu"></use>
+      <svg data-mobile-nav-target="icon">
+        <use class="visible" xlink:href="icons.svg#burger-menu"></use>
+        <use xlink:href="icons.svg#cross"></use>
       </svg>
     </button>
     <ul class="nav__mobile-menu-content" data-mobile-nav-target="container">
       <li>
-        <a class="text-link" href="index.html"> Home </a>
+        <a class="text-link text-link--orange-underline" href="index.html">
+          Home
+        </a>
       </li>
       <li>
-        <a class="text-link" href="courses.html"> Courses </a>
+        <a class="text-link text-link--orange-underline" href="courses.html">
+          Courses
+        </a>
       </li>
       <li>
-        <a class="text-link" href="about.html"> About Us </a>
+        <a class="text-link text-link--orange-underline" href="about.html">
+          About Us
+        </a>
       </li>
       <li>
-        <a class="text-link" href="pricing.html"> Pricing </a>
+        <a class="text-link text-link--orange-underline" href="pricing.html">
+          Pricing
+        </a>
       </li>
       <li>
-        <a class="text-link" href="contact.html"> Contact </a>
+        <a class="text-link text-link--orange-underline" href="contact.html">
+          Contact
+        </a>
       </li>
     </ul>
   </div>
