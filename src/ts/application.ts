@@ -1,6 +1,6 @@
-import "./scss/style.scss";
+import "../scss/style.scss";
 
-import { HelloWorldController, MobileNavController } from "./ts/controllers";
+import { HelloWorldController, MobileNavController } from "./controllers";
 
 import { Application } from "@hotwired/stimulus";
 
