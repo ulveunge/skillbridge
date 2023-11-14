@@ -8,6 +8,8 @@
   padding: 1.4rem 1.6rem;
   border-radius: 0.8rem;
 
+  min-width: $min-screen-width;
+
   background-color: $orange-50;
 
   @include breakpoint(max, 1440px) {

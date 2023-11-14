@@ -1,6 +1,6 @@
 .container {
   max-width: calc(159.6rem + (16.3rem * 2));
-  min-width: 37.5rem;
+  min-width: $min-screen-width;
   padding: 0 16.3rem;
   margin: 0 auto;
 
