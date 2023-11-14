@@ -1,7 +1,9 @@
 import "./scss/style.scss";
 
+import { HelloWorldController, MobileNavController } from "./ts/controllers";
+
 import { Application } from "@hotwired/stimulus";
-import { HelloWorldController } from "./controllers";
 
 const application = Application.start();
 application.register("hello-world", HelloWorldController);
+application.register("mobile-nav", MobileNavController);

@@ -1,0 +1,139 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1.4rem;
+
+  @include breakpoint(max, large) {
+    justify-content: stretch;
+  }
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__list--auth {
+  column-gap: 3rem;
+
+  @include breakpoint(max, large) {
+    column-gap: 2rem;
+
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__item:not(:last-child):not(:first-child) {
+  margin-right: 2.6rem;
+}
+
+.nav__logo {
+  margin-right: 5rem;
+  flex-shrink: 0;
+
+  @include breakpoint(max, large) {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  @include stretched-link;
+
+  padding: 1.2rem 2rem;
+  border-radius: 0.6rem;
+
+  transition: background-color 0.2s ease-out;
+
+  &:hover {
+    background-color: $white-95;
+  }
+}
+
+.nav__link--yellow {
+  padding: 1.2rem 2.4rem;
+
+  background-color: $orange-50;
+  color: $white;
+
+  &:hover {
+    background-color: $orange-70;
+  }
+}
+
+.nav__list:first-of-type .nav__item:not(.nav__logo) {
+  @include breakpoint(max, large) {
+    display: none;
+  }
+}
+
+.nav__mobile-menu {
+  position: relative;
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(max, large) {
+    display: inline-flex;
+  }
+}
+
+.nav__mobile-menu-btn {
+  width: 3.4rem;
+  height: 3.4rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+
+    fill: $grey-15;
+    transition: fill 0.2s ease-out;
+  }
+}
+
+.nav__mobile-menu-btn:hover {
+  svg {
+    fill: $grey-30;
+  }
+}
+
+.nav__mobile-menu-content {
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3rem;
+
+  padding: 2rem 4em;
+  border: 0.2rem solid $orange-70;
+  border-radius: 0.8rem;
+
+  background-color: rgba($white-97, 0.32);
+
+  white-space: nowrap;
+
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0);
+
+  transition: all 0.2s ease-out;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+  }
+}
