@@ -1,1 +1,2 @@
 $min-screen-width: 375px;
+$min-screen-width-with-paddings: calc($min-screen-width - (1.6rem * 2));
