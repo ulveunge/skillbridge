@@ -1,0 +1,133 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+
+  background-color: $white;
+
+  position: relative;
+
+  @include breakpoint(max, medium) {
+    padding-top: 5rem;
+    padding-bottom: 2.4rem;
+  }
+}
+
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10rem;
+
+  padding-bottom: 5rem;
+  border-bottom: 1px solid $white-95;
+
+  @include breakpoint(max, medium) {
+    flex-direction: column;
+    row-gap: 2.4rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.footer__main-sections {
+  display: flex;
+  column-gap: 3rem;
+
+  @include breakpoint(min, medium) {
+    flex-basis: 80.7rem;
+  }
+
+  @include breakpoint(max, medium) {
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+}
+
+.footer__section {
+  flex-grow: 1;
+}
+
+.footer__logo {
+  margin-bottom: 4rem;
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 3rem;
+  }
+}
+
+.footer__contact-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+
+  @include breakpoint(max, medium) {
+    row-gap: 1.3rem;
+  }
+}
+
+.footer__contact-item {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.6rem;
+}
+
+.footer__seciton-title {
+  margin-bottom: 1.4rem;
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 1rem;
+  }
+}
+
+.footer__link-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+}
+
+.footer__social-list {
+  display: flex;
+  column-gap: 1.4rem;
+}
+
+.footer__social-item {
+  position: relative;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.4rem;
+  border-radius: 0.8rem;
+
+  background-color: $white-95;
+
+  cursor: pointer;
+
+  &:hover {
+    .footer__social-link {
+      svg {
+        fill: $orange-50;
+      }
+    }
+  }
+}
+
+.footer__social-link {
+  @include stretched-link;
+
+  svg {
+    fill: $black;
+    transition: fill 0.2s ease-out;
+  }
+}
+
+.footer__copyright {
+  padding-top: 5rem;
+  text-align: center;
+
+  @include breakpoint(max, medium) {
+    padding-top: 2rem;
+  }
+}

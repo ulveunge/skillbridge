@@ -1,4 +1,12 @@
+.page {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
 .container {
+  width: 100%;
   max-width: calc(159.6rem + (16.3rem * 2));
   min-width: $min-screen-width;
   padding: 0 16.3rem;
@@ -13,8 +21,24 @@
   }
 
   @include breakpoint(max, medium) {
-    padding: 0 1.6em;
+    padding: 0 1.6rem;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  outline: transparent;
+  outline-offset: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 // text
@@ -147,8 +171,11 @@
   color: $grey-35;
 }
 
+.text-semi-bold {
+  font-weight: 600;
+}
+
 .text-link {
-  color: $grey-15;
   position: relative;
 
   @include after {
@@ -211,6 +238,11 @@
 }
 
 // icons
+.icon-wrapped {
+  width: 100%;
+  height: 100%;
+}
+
 .icon-54 {
   width: 5.4rem;
   height: 5.4rem;
