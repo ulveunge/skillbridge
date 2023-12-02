@@ -1,5 +1,13 @@
 .introduction {
-  margin: 10rem 0;
+  margin: 10rem 0 calc(10rem - 2rem);
+
+  @include breakpoint(max, 1440px) {
+    margin: 8rem 0 calc(8rem - 1.6rem);
+  }
+
+  @include breakpoint(max, medium) {
+    margin: 5rem 0 calc(5rem - 1.4rem);
+  }
 }
 
 .introduction__body {

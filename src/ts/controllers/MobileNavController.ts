@@ -1,6 +1,6 @@
 import { Controller } from "@hotwired/stimulus";
 
-export default class MobileNavController extends Controller {
+export default class MobileNavController extends Controller<HTMLDivElement> {
   static targets = ["container", "icon"];
 
   open = false;

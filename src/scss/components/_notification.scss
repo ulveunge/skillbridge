@@ -4,7 +4,7 @@
   align-items: center;
   column-gap: 2.3rem;
 
-  margin: 0 3rem 2rem;
+  margin: 0 3rem;
   padding: 1.4rem 1.6rem;
   border-radius: 0.8rem;
 
@@ -13,14 +13,14 @@
   background-color: $orange-50;
 
   @include breakpoint(max, 1440px) {
-    margin: 0 2rem 1.6rem;
+    margin: 0 2rem;
   }
 
   @include breakpoint(max, small) {
     justify-content: space-between;
     column-gap: 0;
 
-    margin: 0 1.6rem 1.4rem;
+    margin: 0 1.6rem;
   }
 
   @include breakpoint(max, 385px) {

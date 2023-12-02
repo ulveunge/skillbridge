@@ -4,6 +4,19 @@
 
   font-size: 1.4rem;
 
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @include breakpoint(max, 1440px) {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+
+  @include breakpoint(max, medium) {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+  }
+
   @include breakpoint(max, large) {
     justify-content: stretch;
   }
@@ -124,7 +137,7 @@
 
 .nav__mobile-menu-content {
   position: absolute;
-  top: calc(100% + 1.5rem);
+  top: calc(100% + 1.5rem + 0.8rem);
   right: 0;
   z-index: 10;
 

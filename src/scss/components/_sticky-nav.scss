@@ -1,0 +1,45 @@
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  z-index: 9900;
+
+  background-color: rgba($white-97, 0.9);
+  backdrop-filter: blur(2.4rem);
+
+  transition: all 0.3s ease-out;
+
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin: 0 -16.3rem;
+    width: 100vw;
+    height: 1px;
+    background-color: transparent;
+
+    animation: sticky-nav-border-animaiton 1s ease-out 0.1s forwards;
+
+    @include breakpoint(max, 1440px) {
+      margin: 0 -8rem;
+    }
+
+    @include breakpoint(max, xlarge) {
+      margin: 0 -2rem;
+    }
+
+    @include breakpoint(max, medium) {
+      margin: 0 -1.6rem;
+    }
+  }
+}
+
+@keyframes sticky-nav-border-animaiton {
+  from {
+    background-color: $orange-50;
+    transform: scaleX(0);
+  }
+  to {
+    background-color: $white-90;
+    transform: scaleX(1);
+  }
+}
