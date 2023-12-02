@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class StickyNavController extends Controller<HTMLDivElement> {
-  static targets = ["stick"];
+  static targets = ["sticky"];
 
   sticked: boolean = false;
 
@@ -26,14 +26,14 @@ export default class StickyNavController extends Controller<HTMLDivElement> {
       parseFloat(height) + parseFloat(marginTop) + parseFloat(marginBottom);
 
     if (this.sticked) {
-      return calculatedHeight + this.stickTargetHeight;
+      return calculatedHeight + this.stickyTargetHeight;
     }
 
     return calculatedHeight;
   }
 
-  get stickTargetHeight() {
-    return this.stickTarget.clientHeight;
+  get stickyTargetHeight() {
+    return this.stickyTarget.clientHeight;
   }
 
   setAbsoluteHeight() {
@@ -46,15 +46,15 @@ export default class StickyNavController extends Controller<HTMLDivElement> {
   }
 
   stickNav() {
-    if (window.scrollY > this.element.clientHeight - this.stickTargetHeight) {
-      this.stickTarget.classList.add("sticky-nav");
+    if (window.scrollY > this.element.clientHeight - this.stickyTargetHeight) {
+      this.stickyTarget.classList.add("sticky-nav");
       this.sticked = true;
     } else {
-      this.stickTarget.classList.remove("sticky-nav");
+      this.stickyTarget.classList.remove("sticky-nav");
       this.sticked = false;
     }
   }
 
-  declare readonly hasStickTarget: boolean;
-  declare readonly stickTarget: HTMLDivElement;
+  declare readonly hasStickyTarget: boolean;
+  declare readonly stickyTarget: HTMLDivElement;
 }
