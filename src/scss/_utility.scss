@@ -53,7 +53,35 @@
   }
 
   @include breakpoint(max, medium) {
+    font-size: 1.6rem;
+  }
+}
+
+.text-header {
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+
+  @include breakpoint(max, 1440px) {
+    font-size: 3.8rem;
+  }
+
+  @include breakpoint(max, medium) {
     font-size: 2.8rem;
+  }
+}
+
+.text-sub-header {
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+
+  @include breakpoint(max, 1440px) {
+    font-size: 2.8rem;
+  }
+
+  @include breakpoint(max, medium) {
+    font-size: 2.4rem;
   }
 }
 
@@ -93,6 +121,11 @@
   @include breakpoint(max, 1440px) {
     font-size: 1.4rem;
   }
+}
+
+.text-small {
+  font-size: 1.4rem;
+  line-height: 1.5;
 }
 
 .text-orange-50 {
@@ -169,6 +202,10 @@
 
 .text-grey-35 {
   color: $grey-35;
+}
+
+.text-medium {
+  font-weight: 500;
 }
 
 .text-semi-bold {
@@ -258,6 +295,11 @@
   }
 }
 
+.icon-34 {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
 .icon-24 {
   width: 2.4rem;
   height: 2.4rem;
@@ -266,4 +308,38 @@
     width: 2rem;
     height: 2rem;
   }
+}
+
+// buttons
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.6rem;
+  border: 0.1rem solid transparent;
+
+  cursor: pointer;
+}
+
+.btn--yellow {
+  background-color: $orange-50;
+
+  &:hover {
+    background-color: $orange-70;
+  }
+}
+
+.btn--white {
+  background-color: $white;
+  border-color: $white-95;
+
+  &:hover {
+    background-color: $white-95;
+  }
+}
+
+.btn--yellow,
+.btn--white {
+  transition: background-color 0.2s ease-out;
 }

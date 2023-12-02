@@ -46,7 +46,7 @@
 .nav__link {
   @include stretched-link;
 
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 2.4rem;
   border-radius: 0.6rem;
 
   transition: background-color 0.2s ease-out;
@@ -56,14 +56,15 @@
   }
 }
 
-.nav__link--yellow {
-  padding: 1.2rem 2.4rem;
+.nav__sign-in {
+  padding: 1.4rem 3.4rem;
 
-  background-color: $orange-50;
-  color: $white;
+  @include breakpoint(max, 1440px) {
+    padding: 1.2rem 2.4rem;
+  }
 
-  &:hover {
-    background-color: $orange-70;
+  @include breakpoint(max, medium) {
+    padding: 1.2rem 2rem;
   }
 }
 

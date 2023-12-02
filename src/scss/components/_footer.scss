@@ -32,15 +32,17 @@
 
 .footer__main-sections {
   display: flex;
-  column-gap: 3rem;
+  flex-basis: 80.7rem;
+  column-gap: 4rem;
 
-  @include breakpoint(min, medium) {
-    flex-basis: 80.7rem;
+  @include breakpoint(max, 1440px) {
+    flex-wrap: 73.7rem;
   }
 
   @include breakpoint(max, medium) {
+    flex-basis: auto;
     flex-wrap: wrap;
-    gap: 2.4rem;
+    row-gap: 2.4rem;
   }
 }
 

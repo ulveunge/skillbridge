@@ -6,8 +6,44 @@
   <body class="page">
     {{> header }}
     <div class="breakpointer"></div>
-    <main class="main">
-      <div class="container"></div>
+    <main class="main home text-regular">
+      <section class="home__introduction introduction">
+        <div class="container">
+          <div class="introduction__body">
+            <h2 class="introduction__title text-main-header">
+              <div class="introduction__stripes-icon">
+                <svg>
+                  <use xlink:href="icons.svg#introduction-stripes"></use>
+                </svg>
+              </div>
+              <div class="introduction__title-icon">
+                <svg class="icon-34">
+                  <use xlink:href="icons.svg#lightning"></use>
+                </svg>
+              </div>
+              <p>
+                <span class="text-orange-50"> Unlock</span> Your Creative
+                Potential
+              </p>
+            </h2>
+            <h3 class="introduction__label text-sub-header">
+              with Online Design and Development Courses.
+            </h3>
+            <p class="introduction__description">
+              Learn from Industry Experts and Enhance Your Skills.
+            </p>
+            <div class="introduction__buttons text-small">
+              <a
+                class="introduction__btn btn btn--yellow text-white text-medium"
+                >Explore Courses</a
+              >
+              <a class="introduction__btn btn btn--white text-medium"
+                >View Pricing</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     {{> footer}}
     <script type="module" src="/src/ts/application.ts"></script>

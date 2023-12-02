@@ -1,0 +1,109 @@
+.introduction {
+  margin: 10rem 0;
+}
+
+.introduction__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.introduction__title {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-color: $white;
+
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+
+  border-radius: 1.1rem;
+  border: 0.1rem solid $white-95;
+
+  margin-bottom: 2rem;
+
+  @include breakpoint(max, 1440px) {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.introduction__stripes-icon {
+  position: absolute;
+  z-index: 1;
+
+  top: -3rem;
+  left: -2.4rem;
+
+  width: 3.9rem;
+  height: 4.3rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include breakpoint(max, medium) {
+    top: -2rem;
+    left: -1rem;
+  }
+}
+
+.introduction__title-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 6.2rem;
+  height: 6.2rem;
+
+  margin-right: 1rem;
+
+  border-radius: 0.6rem;
+
+  background-color: $orange-95;
+
+  @include breakpoint(max, 1440px) {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
+
+.introduction__label {
+  margin-bottom: 1rem;
+
+  @include breakpoint(max, 1440px) {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.introduction__description {
+  margin-bottom: 6rem;
+
+  @include breakpoint(max, 1440px) {
+    margin-bottom: 5rem;
+  }
+}
+
+.introduction__label,
+.introduction__description {
+  text-align: center;
+
+  @include breakpoint(max, medium) {
+    padding: 0 3rem;
+  }
+}
+
+.introduction__btn {
+  padding: 1.8rem 2.4rem;
+
+  @include breakpoint(max, 1440px) {
+    padding: 1.4rem 2rem;
+  }
+}
