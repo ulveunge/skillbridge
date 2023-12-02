@@ -37,8 +37,6 @@ export default class StickyNavController extends Controller<HTMLDivElement> {
   }
 
   setAbsoluteHeight() {
-    console.log(this.absoluteHeight);
-
     this.element.style.removeProperty("--absolute-height");
 
     this.element.style.setProperty(
