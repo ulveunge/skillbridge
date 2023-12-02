@@ -1,9 +1,10 @@
 .breakpointer {
   @include breakpointer;
 
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
+  z-index: 9999;
 
   padding: 0.8rem 1.2rem;
   border-radius: 0.8rem;
