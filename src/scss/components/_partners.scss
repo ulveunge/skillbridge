@@ -73,6 +73,10 @@
   &:hover::before {
     background-color: $white-95;
   }
+
+  &:active::before {
+    background-color: darken($white-95, 3%);
+  }
 }
 
 .partners__link {
