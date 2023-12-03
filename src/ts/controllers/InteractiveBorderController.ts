@@ -9,13 +9,15 @@ export default class InteractiveBorderController extends Controller<HTMLElement>
   }
 
   disconnect() {
-    this.element.removeEventListener(
-      "mousemove",
-      this.calculateRotation.bind(this)
-    );
+    this.element.removeEventListener("mousemove", this.calculateRotation);
   }
 
   calculateRotation(e: MouseEvent) {
+    if (window.matchMedia("(max-width: 992px)").matches) {
+      this.element.style.removeProperty("--rotation");
+      return;
+    }
+
     const mouseX =
       this.element.offsetLeft + this.element.offsetWidth / 2 - e.pageX;
     const mouseY =
