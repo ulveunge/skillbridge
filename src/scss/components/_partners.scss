@@ -46,6 +46,10 @@
     width: 0.1rem;
     height: calc(100% - (3rem * 2));
     background-color: $white-95;
+
+    @include breakpoint(max, 1440px) {
+      height: calc(100% - (2rem * 2));
+    }
   }
 
   &::before {
