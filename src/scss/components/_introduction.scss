@@ -1,15 +1,3 @@
-.introduction {
-  margin: 10rem 0 calc(10rem - 2rem);
-
-  @include breakpoint(max, 1440px) {
-    margin: 8rem 0 calc(8rem - 1.6rem);
-  }
-
-  @include breakpoint(max, medium) {
-    margin: 5rem 0 calc(5rem - 1.4rem);
-  }
-}
-
 .introduction__body {
   display: flex;
   flex-direction: column;
@@ -52,7 +40,7 @@
 
 .introduction__stripes-icon {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 
   top: -3rem;
   left: -2.4rem;

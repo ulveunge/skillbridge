@@ -1,0 +1,115 @@
+.partners__body {
+  border-radius: 1.2rem;
+  background-color: $white-95;
+}
+
+.partners__list {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.parnters__partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1 0 auto;
+
+  padding: 6rem;
+  position: relative;
+  cursor: pointer;
+
+  @include breakpoint(max, 1440px) {
+    padding: 4.4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    padding: 3rem 4rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.1rem;
+    margin: auto 0;
+    width: 0.1rem;
+    height: calc(100% - (3rem * 2));
+    background-color: $white-95;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.1rem;
+    left: -0.2rem;
+    z-index: -1;
+    width: calc(100% + 0.1rem);
+    height: calc(100% - (0.1rem * 2));
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &:first-child:before {
+    left: 0.1rem;
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+  }
+
+  &:last-child:before {
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+  }
+
+  &:hover::before {
+    background-color: $white-95;
+  }
+}
+
+.partners__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  @include stretched-link();
+}
+.partner__icon {
+  height: 3.4rem;
+}
+
+.partner__icon--zapier {
+  width: 6.8rem;
+}
+
+.partner__icon--spotify {
+  width: 9.917rem;
+}
+
+.partner__icon--zoom {
+  width: 6.942rem;
+}
+
+.partner__icon--amazon {
+  width: 7.792rem;
+}
+
+.partner__icon--adobe {
+  width: 9.421rem;
+}
+
+.partner__icon--notion {
+  width: 9.138rem;
+}
+
+.partner__icon--netflix {
+  width: 7.863rem;
+}

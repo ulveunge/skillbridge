@@ -26,19 +26,7 @@
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  outline: transparent;
-  outline-offset: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  @include hide();
 }
 
 // text
@@ -223,7 +211,7 @@
     left: 0;
 
     width: 100%;
-    height: 1px;
+    height: 0.1rem;
 
     background-color: $grey-15;
 
@@ -262,8 +250,8 @@
 
 .text-link--orange-underline {
   &::after {
-    bottom: -1px;
-    height: 2px;
+    bottom: -0.1rem;
+    height: 0.2rem;
     background-color: $orange-70;
   }
 }
@@ -342,4 +330,56 @@
 .btn--yellow,
 .btn--white {
   transition: background-color 0.2s ease-out;
+}
+
+// interactive border
+
+.interactive-border {
+  position: relative;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  &::before {
+    background: linear-gradient(
+      var(--rotation),
+      transparent 60%,
+      $fire-red 70%,
+      $orange-70 90%
+    );
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+
+    opacity: 0;
+    transition: opacity 0.25s ease-out;
+  }
+
+  &::after {
+    width: calc(100% - 0.2rem);
+    height: calc(100% - 0.2rem);
+
+    border-radius: inherit;
+    z-index: 1;
+
+    inset: -0.1rem;
+    margin: auto;
+
+    background-color: $white;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.interactive-border__content {
+  position: relative;
+  z-index: 2;
 }
