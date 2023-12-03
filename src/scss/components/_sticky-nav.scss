@@ -34,11 +34,16 @@
 }
 
 @keyframes sticky-nav-border-animaiton {
-  from {
-    background-color: $orange-50;
+  0% {
+    background-color: $fire-red;
     transform: scaleX(0);
   }
-  to {
+
+  50% {
+    background-color: $orange-50;
+  }
+
+  100% {
     background-color: $white-90;
     transform: scaleX(1);
   }
