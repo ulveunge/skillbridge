@@ -1,0 +1,40 @@
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+
+  padding: 5rem;
+  border-radius: 1.2rem;
+
+  background-color: $white;
+
+  @include breakpoint(max, 1440px) {
+    padding: 4rem;
+    row-gap: 4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    padding: 3rem;
+    row-gap: 3rem;
+  }
+}
+
+.benefit-card__number {
+  align-self: flex-end;
+}
+
+.benefit-card__text-row {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  row-gap: 1.4rem;
+}
+
+.benefit-card__btn {
+  padding: 2rem;
+  align-self: flex-end;
+
+  @include breakpoint(max, 1440px) {
+    padding: 1.4rem;
+  }
+}

@@ -5,6 +5,7 @@
 
   .video__container {
     opacity: 1;
+    pointer-events: all;
   }
 
   .video__play-btn {
@@ -81,4 +82,5 @@
   opacity: 0;
 
   border-radius: inherit;
+  pointer-events: none;
 }

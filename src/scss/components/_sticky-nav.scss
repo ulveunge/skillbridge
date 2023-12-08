@@ -33,6 +33,21 @@
   }
 }
 
+.sticky-nav .nav__item:not(.nav__logo):has(:not(.nav__sign-in)) {
+  padding: 1.2rem 2.4rem;
+}
+
+.sticky-nav .nav__link {
+  padding: 0;
+
+  &:hover {
+    background-color: unset;
+  }
+
+  @extend .text-link;
+  @extend .text-link--orange-underline;
+}
+
 @keyframes sticky-nav-border-animaiton {
   0% {
     background-color: $fire-red;

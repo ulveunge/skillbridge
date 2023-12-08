@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
 
-  font-size: 1.4rem;
-
   padding-top: 2rem;
   padding-bottom: 2rem;
 
@@ -61,8 +59,9 @@
 
   padding: 1.2rem 2.4rem;
   border-radius: 0.6rem;
+  outline: 0.1rem solid transparent;
 
-  transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out, outline-color 0.2s ease-out;
 
   &:hover {
     background-color: $white-95;
@@ -70,6 +69,7 @@
 }
 
 .nav__sign-in {
+  font-weight: 400;
   padding: 1.4rem 3.4rem;
 
   @include breakpoint(max, 1440px) {
