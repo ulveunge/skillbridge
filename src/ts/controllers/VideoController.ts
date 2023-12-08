@@ -27,7 +27,6 @@ export default class VideoController extends Controller {
       playerVars: {
         controls: 0,
         autoplay: 0,
-        color: "white",
       },
     };
 
