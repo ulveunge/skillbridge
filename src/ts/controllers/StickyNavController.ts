@@ -6,7 +6,7 @@ export default class StickyNavController extends Controller<HTMLDivElement> {
   sticked: boolean = false;
 
   connect() {
-    window.addEventListener("load", this.setAbsoluteHeight.bind(this));
+    this.setAbsoluteHeight();
     window.addEventListener("scroll", this.stickNav.bind(this));
     window.addEventListener("resize", this.setAbsoluteHeight.bind(this));
   }

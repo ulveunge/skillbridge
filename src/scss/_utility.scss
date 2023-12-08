@@ -283,6 +283,16 @@
   }
 }
 
+.icon-44 {
+  width: 4.4rem;
+  height: 4.4rem;
+
+  @include breakpoint(max, 1440px) {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+}
+
 .icon-34 {
   width: 3.4rem;
   height: 3.4rem;

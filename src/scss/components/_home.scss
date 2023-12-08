@@ -22,3 +22,15 @@
     margin-bottom: 5rem;
   }
 }
+
+.home__video {
+  margin-bottom: 15rem;
+
+  @include breakpoint(max, 1440px) {
+    margin-bottom: 10rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 5rem;
+  }
+}
