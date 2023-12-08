@@ -25,6 +25,7 @@ export default class VideoController extends Controller {
     const options: Options = {
       videoId: this.idValue,
       playerVars: {
+        controls: 0,
         autoplay: 0,
         color: "white",
       },
