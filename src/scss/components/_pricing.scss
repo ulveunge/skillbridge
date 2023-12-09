@@ -23,6 +23,7 @@
 .pricing__tab:not(.active) {
   position: absolute;
   left: -999.9rem;
+  top: -999.9rem;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
