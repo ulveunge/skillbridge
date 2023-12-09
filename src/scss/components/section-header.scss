@@ -30,3 +30,32 @@
     align-self: flex-start;
   }
 }
+
+.section-header__tabs {
+  flex-shrink: 0;
+
+  display: flex;
+
+  background-color: $white;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+
+  @include breakpoint(max, medium) {
+    align-self: center;
+  }
+}
+
+.section-header__tab {
+  @extend .text-grey-15;
+
+  padding: 1.4rem 3rem;
+
+  @include breakpoint(max, 1440px) {
+    padding: 1.2rem 2.4rem;
+  }
+}
+
+.section-header__tab.active {
+  @extend .btn--yellow;
+  @extend .text-white;
+}

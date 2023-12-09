@@ -135,6 +135,18 @@
   }
 }
 
+.text-accent--bigger {
+  font-size: 2.2rem;
+
+  @include breakpoint(max, 1440px) {
+    font-size: 1.8rem;
+  }
+
+  @include breakpoint(max, medium) {
+    font-size: 1.6rem;
+  }
+}
+
 .text-orange-50 {
   color: $orange-50;
 }
@@ -327,6 +339,16 @@
   }
 }
 
+.icon-20 {
+  width: 2rem;
+  height: 2rem;
+
+  @include breakpoint(max, 1440px) {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
 // buttons
 .btn {
   display: inline-flex;
@@ -439,6 +461,10 @@
       opacity: 1;
     }
   }
+}
+
+.interactive-border--white-99::after {
+  background-color: $white-99;
 }
 
 .interactive-border__content {

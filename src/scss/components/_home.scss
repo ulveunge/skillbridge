@@ -23,7 +23,8 @@
   }
 }
 
-.home__video {
+.home__video,
+.home__pricing {
   margin-bottom: 15rem;
 
   @include breakpoint(max, 1440px) {

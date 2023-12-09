@@ -1,0 +1,43 @@
+.pricing__tabs {
+  padding: 8rem;
+
+  border-radius: 1.2rem;
+
+  background-color: $white;
+
+  @include breakpoint(max, 1440px) {
+    padding: 5rem;
+  }
+  @include breakpoint(max, medium) {
+    padding: 2rem;
+  }
+}
+
+.pricing__tab {
+  border-radius: inherit;
+
+  transition: position 0.25s ease-out, visibility 0.25s ease-out,
+    opacity 0.25s ease-out, pointer-events 0.25s ease-out;
+}
+
+.pricing__tab:not(.active) {
+  position: absolute;
+  left: -999.9rem;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.pricing__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 3rem;
+
+  border-radius: inherit;
+
+  background-color: $white;
+
+  @include breakpoint(max, large) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
