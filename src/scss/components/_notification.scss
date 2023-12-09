@@ -29,6 +29,8 @@
 }
 
 .notification__icon {
+  fill: $white;
+
   @include breakpoint(max, 385px) {
     display: none;
   }

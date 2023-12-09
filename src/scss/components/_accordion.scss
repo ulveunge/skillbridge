@@ -1,0 +1,191 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  @include breakpoint(max, medium) {
+    gap: 2rem;
+  }
+}
+
+.accordion__item {
+  overflow: hidden;
+
+  --content-open-height: fit-content;
+  --content-close-height: fit-content;
+
+  padding: 3rem 5rem;
+
+  border-radius: 1.2rem;
+
+  background-color: $white-95;
+
+  transition: padding 0.4s ease-out;
+
+  @include breakpoint(max, 1440px) {
+    border-radius: 1rem;
+
+    padding: 2.4rem 4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    padding: 2rem 2.4rem;
+  }
+}
+
+.accordion__item.open {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  @include breakpoint(max, 1440px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .accordion__cross {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+
+    position: static;
+  }
+
+  .accordion__plus {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    position: absolute;
+  }
+
+  .accordion__content {
+    height: var(--content-open-height);
+    opacity: 1;
+    pointer-events: all;
+
+    transition: all 0.4s ease-out, opacity 0.2s 0.2s ease-out;
+  }
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+
+  @include breakpoint(max, 1440px) {
+    gap: 4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    gap: 3rem;
+  }
+}
+.accordion__title {
+}
+
+.accordion__btn-wrapper {
+  flex-shrink: 0;
+  position: relative;
+
+  background-color: $orange-95;
+
+  border-radius: 0.8rem;
+
+  padding: 1.2rem;
+
+  &:hover {
+    background-color: $orange-90;
+  }
+
+  @include breakpoint(max, 1440px) {
+    border-radius: 0.6rem;
+
+    padding: 1rem;
+  }
+
+  svg {
+    transition: all 0.1s ease-out;
+  }
+}
+
+.accordion__plus {
+  stroke: $grey-15;
+}
+
+.accordion__cross {
+  fill: $grey-15;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  position: absolute;
+}
+.accordion__content {
+  height: var(--content-close-height);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.4s ease-out, opacity 0.1s ease-out;
+}
+.accordion__text {
+  padding: 5rem 0;
+
+  @include breakpoint(max, 1440px) {
+    padding: 4rem 0;
+  }
+
+  @include breakpoint(max, medium) {
+    padding: 2rem 0;
+  }
+}
+.accordion__link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 2rem 3rem;
+
+  border: 0.1rem solid $white-95;
+  border-radius: 0.8rem;
+
+  background-color: $white-97;
+
+  @include breakpoint(max, 1440px) {
+    padding: 1.6rem 2.4rem;
+    border-radius: 0.6rem;
+  }
+
+  @include breakpoint(max, medium) {
+    padding: 1.2rem 2rem;
+  }
+}
+.accordion__link-btn {
+}
+.accordion__btn-wrapper--round {
+  background-color: $white;
+  padding: 1.4rem;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $white-90;
+  }
+
+  @include breakpoint(max, 1440px) {
+    padding: 1.2rem;
+  }
+
+  @include breakpoint(max, medium) {
+    padding: 1rem;
+  }
+}
+.accordion__arrow-right {
+  fill: $grey-30;
+}

@@ -6,6 +6,7 @@ import {
   InteractiveBorderController,
   VideoController,
   TabController,
+  AccordionController,
 } from "./controllers";
 
 import { Application } from "@hotwired/stimulus";
@@ -16,3 +17,4 @@ application.register("sticky-nav", StickyNavController);
 application.register("interactive-border", InteractiveBorderController);
 application.register("video", VideoController);
 application.register("tab", TabController);
+application.register("accordion", AccordionController);

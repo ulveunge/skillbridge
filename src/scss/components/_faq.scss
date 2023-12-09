@@ -1,0 +1,53 @@
+.faq__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 12rem;
+
+  padding: 10rem;
+
+  border-radius: 1.2rem;
+
+  background-color: $white;
+
+  @include breakpoint(max, 1440px) {
+    padding: 8rem;
+    gap: 8rem;
+  }
+
+  @include breakpoint(max, large) {
+    flex-direction: column;
+    padding: 2.4rem;
+    gap: 4rem;
+  }
+}
+.faq__header {
+  display: flex;
+  flex-direction: column;
+}
+.faq__title {
+  margin-bottom: 1rem;
+
+  @include breakpoint(max, 1440px) {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.faq__text {
+  margin-bottom: 5rem;
+
+  @include breakpoint(max, 1440px) {
+    margin-bottom: 4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 2rem;
+  }
+}
+
+.faq__btn {
+  align-self: flex-start;
+}
+
+.faq__accordion {
+  flex: 1 0 54.5%;
+}
