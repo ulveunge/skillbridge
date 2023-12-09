@@ -5,8 +5,6 @@ export default class AccordionController extends Controller<HTMLElement> {
 
   contentHeight: string = `100vh`;
 
-  open: boolean = false;
-
   connect() {
     if (this.hasButtonTarget) {
       this.buttonTarget.addEventListener("click", this.toggle.bind(this));
