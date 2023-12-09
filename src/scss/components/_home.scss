@@ -35,8 +35,21 @@
   }
 }
 
-.home__benefits {
+.home__benefits,
+.home__courses {
   margin-bottom: 10rem;
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 5rem;
+  }
+}
+
+.home__testimonials {
+  margin-bottom: 16.8rem;
+
+  @include breakpoint(max, 1440px) {
+    margin-bottom: 10rem;
+  }
 
   @include breakpoint(max, medium) {
     margin-bottom: 5rem;

@@ -1,0 +1,34 @@
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.4rem;
+
+  @include breakpoint(max, medium) {
+    flex-direction: column;
+  }
+}
+
+.card-tags__tags {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-tags__tag {
+  padding: 1rem 1.6rem;
+  border: 1px solid $white-95;
+  border-radius: 0.8rem;
+
+  @include breakpoint(min, medium) {
+    align-self: flex-start;
+  }
+  @include breakpoint(max, 1440px) {
+    padding: 0.8rem 1.4rem;
+    border-radius: 0.6rem;
+  }
+}
+.card-tags__author {
+  @include breakpoint(min, medium) {
+    align-self: center;
+  }
+}

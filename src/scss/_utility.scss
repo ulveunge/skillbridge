@@ -125,6 +125,16 @@
   }
 }
 
+.text-accent {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+
+  @include breakpoint(max, 1440px) {
+    font-size: 1.6rem;
+  }
+}
+
 .text-orange-50 {
   color: $orange-50;
 }
@@ -368,6 +378,15 @@
 
 .btn--white-99 {
   background-color: $white-99;
+  border-color: $white-95;
+
+  &:hover {
+    background-color: $white-95;
+  }
+}
+
+.btn--white-97 {
+  background-color: $white-97;
   border-color: $white-95;
 
   &:hover {

@@ -9,6 +9,7 @@
   background-color: $white;
 
   @include breakpoint(max, 1440px) {
+    border-radius: 1rem;
     padding: 4rem;
     row-gap: 4rem;
   }
