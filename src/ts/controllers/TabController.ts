@@ -1,6 +1,6 @@
 import { Controller } from "@hotwired/stimulus";
 
-export default class TabController extends Controller {
+export default class TabController extends Controller<HTMLElement> {
   static targets = ["button", "frame"];
 
   connect() {
