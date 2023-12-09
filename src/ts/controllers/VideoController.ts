@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus";
 import YouTubePlayer from "youtube-player";
 import { YouTubePlayer as YTPlayer, Options } from "youtube-player/dist/types";
 
-export default class VideoController extends Controller {
+export default class VideoController extends Controller<HTMLElement> {
   static targets = ["container", "playButton"];
   static values = { id: String };
 
