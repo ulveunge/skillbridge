@@ -32,6 +32,7 @@ export default class AccordionController extends Controller<HTMLElement> {
 
   calculate() {
     this.element.style.setProperty("--content-close-height", "fit-content");
+    this.element.style.setProperty("--content-open-height", "fit-content");
     this.contentHeight = `${
       this.contentTarget.getBoundingClientRect().height / 10
     }rem`;
