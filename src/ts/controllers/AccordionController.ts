@@ -5,9 +5,12 @@ export default class AccordionController extends Controller<HTMLElement> {
 
   contentHeight: string = `100vh`;
 
+  opened: boolean = false;
+
   connect() {
     if (this.hasButtonTarget) {
       this.buttonTarget.addEventListener("click", this.toggle.bind(this));
+      window.addEventListener("accordion:close-all", this.close.bind(this));
     }
 
     if (this.hasContentTarget) {
@@ -19,6 +22,7 @@ export default class AccordionController extends Controller<HTMLElement> {
   disconnect() {
     if (this.hasButtonTarget) {
       this.buttonTarget.removeEventListener("click", this.toggle);
+      window.removeEventListener("accordion:close-all", this.close);
     }
 
     if (this.hasContentTarget) {
@@ -27,7 +31,22 @@ export default class AccordionController extends Controller<HTMLElement> {
   }
 
   toggle() {
-    this.element.classList.toggle("open");
+    if (this.opened) {
+      this.close();
+    } else {
+      this.open();
+    }
+  }
+
+  open() {
+    window.dispatchEvent(new CustomEvent("accordion:close-all"));
+    this.element.classList.add("open");
+    this.opened = true;
+  }
+
+  close() {
+    this.element.classList.remove("open");
+    this.opened = false;
   }
 
   calculate() {
