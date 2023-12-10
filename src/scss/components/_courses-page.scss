@@ -1,0 +1,25 @@
+.courses-page {
+}
+
+.courses-page__course:not(:last-of-type) {
+  margin-bottom: 5rem;
+
+  @include breakpoint(max, 1440px) {
+    margin-bottom: 4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 2rem;
+  }
+}
+.courses-page__course:last-of-type {
+  margin-bottom: 15rem;
+
+  @include breakpoint(max, 1440px) {
+    margin-bottom: 10rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 5rem;
+  }
+}

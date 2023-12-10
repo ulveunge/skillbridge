@@ -1,0 +1,172 @@
+.course__body {
+  padding: 5rem;
+
+  border-radius: 1.2rem;
+
+  background-color: $white;
+
+  @include breakpoint(max, 1440px) {
+    padding: 4rem;
+    border-radius: 1rem;
+  }
+
+  @include breakpoint(max, medium) {
+    padding: 2.4rem;
+    border-radius: 0.8rem;
+  }
+}
+
+.course__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+
+  margin-bottom: 3rem;
+
+  @include breakpoint(min, medium) {
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.course__title {
+  margin-bottom: 1rem;
+
+  @include breakpoint(max, 1440px) {
+    margin-bottom: 0.6rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 0.4rem;
+  }
+}
+
+.course__btn {
+  flex-shrink: 0;
+
+  @include breakpoint(max, medium) {
+    align-self: flex-start;
+  }
+}
+
+.course__images {
+  display: flex;
+  gap: 3rem;
+
+  margin-bottom: 3rem;
+
+  @include breakpoint(max, 1440px) {
+    gap: 2rem;
+
+    margin-bottom: 2.4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    gap: 1rem;
+  }
+}
+.course__image-wrapper {
+  flex: 1;
+  max-height: 42.2rem;
+
+  border-radius: 0.8rem;
+
+  @include breakpoint(max, 1440px) {
+    max-height: 32.6rem;
+    border-radius: 0.6rem;
+  }
+
+  @include breakpoint(max, medium) {
+    max-height: 10rem;
+    border-radius: 0.4rem;
+  }
+}
+
+.course__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.course__tags-row {
+  margin-bottom: 5rem;
+
+  @include breakpoint(max, 1440px) {
+    margin-bottom: 4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.course__footer {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1.2rem;
+  border: 0.1rem solid $white-95;
+}
+
+.course__footer-title {
+  padding: 2.4rem 3rem;
+
+  border-bottom: 0.1rem solid $white-95;
+
+  @include breakpoint(max, 1440px) {
+    padding: 2rem 2.4rem;
+  }
+}
+
+.course__contents {
+  display: flex;
+  padding: 3rem 0;
+
+  @include breakpoint(max, 1440px) {
+    padding: 2.4rem 0;
+  }
+
+  @include breakpoint(max, large) {
+    flex-direction: column;
+    padding: 0 2.4rem;
+  }
+}
+.course__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+
+  padding: 0 5rem;
+
+  @include breakpoint(max, 1440px) {
+    row-gap: 1.6rem;
+    padding: 0 4rem;
+  }
+
+  @include breakpoint(max, large) {
+    row-gap: 1.2rem;
+    padding: 2rem 0;
+  }
+}
+
+.course__content:not(:last-child) {
+  @include breakpoint(min, large) {
+    border-right: 0.1rem solid $white-95;
+  }
+
+  @include breakpoint(max, large) {
+    border-bottom: 0.1rem solid $white-95;
+  }
+}
+
+.course__content:last-child {
+  @include breakpoint(max, large) {
+    padding-bottom: 2.4rem;
+  }
+}

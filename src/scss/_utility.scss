@@ -115,6 +115,20 @@
   }
 }
 
+.text-number-small {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.5;
+
+  @include breakpoint(max, 1440px) {
+    font-size: 4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    font-size: 3rem;
+  }
+}
+
 .text-regular {
   font-size: 1.8rem;
   font-weight: 400;

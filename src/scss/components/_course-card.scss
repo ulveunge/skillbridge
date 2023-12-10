@@ -18,10 +18,18 @@
     padding: 2.4rem;
   }
 }
+
+.course-card:hover .course-card__image {
+  @extend .scaling-image__hover;
+}
+
 .course-card__image-wrapper {
   aspect-ratio: 683.5/380;
   max-width: 100%;
   max-height: 38rem;
+  border-radius: 0.8rem;
+
+  @extend .scaling-image__base;
 
   @include breakpoint(max, 1440px) {
     max-height: 26.7rem;
@@ -35,7 +43,7 @@
 .course-card__image {
   width: 100%;
   height: 100%;
-  border-radius: 0.8rem;
+  border-radius: inherit;
   object-fit: cover;
 }
 

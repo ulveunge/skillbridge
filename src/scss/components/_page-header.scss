@@ -1,0 +1,37 @@
+.page-header {
+  margin: 10rem 3rem;
+
+  @include breakpoint(max, 1440px) {
+    margin: 8rem 2rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin: 5rem 1.6rem;
+  }
+
+  border-bottom: 0.1rem solid $white-90;
+}
+.page-header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+
+  padding-bottom: 5rem;
+
+  @include breakpoint(max, 1440px) {
+    gap: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    flex-direction: column;
+    gap: 1.6rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.page-header__title,
+.page-header__description {
+  flex: 1;
+}

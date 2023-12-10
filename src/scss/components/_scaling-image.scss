@@ -1,0 +1,21 @@
+.scaling-image__base {
+  overflow: hidden;
+
+  img {
+    transition: transform 0.8s ease-in-out;
+    transform-origin: center center;
+  }
+}
+
+.scaling-image__hover {
+  transform: scale(1.2);
+  transition-duration: 2.5s;
+}
+
+.scaling-image {
+  @extend .scaling-image__base;
+
+  &:hover img {
+    @extend .scaling-image__hover;
+  }
+}

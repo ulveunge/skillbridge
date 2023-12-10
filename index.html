@@ -1,952 +1,1309 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    {{> head pageTitle='Skillbridge - Home'}}
+  </head>
 
-<head>
-  {{> head pageTitle='Skillbridge - Home'}}
-</head>
-
-<body class="page">
-  {{> header }}
-  <div class="breakpointer"></div>
-  <main class="main home text-regular">
-    <section class="home__introduction introduction">
-      <div class="container">
-        <div class="introduction__body">
-          <h2 class="introduction__title text-main-header interactive-border" data-controller="interactive-border">
-            <div class="introduction__stripes-icon">
-              <svg>
-                <use xlink:href="icons.svg#introduction-stripes"></use>
-              </svg>
-            </div>
-            <div class="introduction__title-icon interactive-border__content">
-              <svg class="icon-34">
-                <use xlink:href="icons.svg#lightning"></use>
-              </svg>
-            </div>
-            <p class="interactive-border__content">
-              <span class="text-orange-50"> Unlock</span> Your Creative
-              Potential
+  <body class="page">
+    {{> header }}
+    <div class="breakpointer"></div>
+    <main class="main home text-regular">
+      <section class="home__introduction introduction">
+        <div class="container">
+          <div class="introduction__body">
+            <h2
+              class="introduction__title text-main-header interactive-border"
+              data-controller="interactive-border"
+            >
+              <div class="introduction__stripes-icon">
+                <svg>
+                  <use xlink:href="icons.svg#introduction-stripes"></use>
+                </svg>
+              </div>
+              <div class="introduction__title-icon interactive-border__content">
+                <svg class="icon-34">
+                  <use xlink:href="icons.svg#lightning"></use>
+                </svg>
+              </div>
+              <p class="interactive-border__content">
+                <span class="text-orange-50"> Unlock</span> Your Creative
+                Potential
+              </p>
+            </h2>
+            <h3 class="introduction__label text-sub-header">
+              with Online Design and Development Courses.
+            </h3>
+            <p class="introduction__description">
+              Learn from Industry Experts and Enhance Your Skills.
             </p>
-          </h2>
-          <h3 class="introduction__label text-sub-header">
-            with Online Design and Development Courses.
-          </h3>
-          <p class="introduction__description">
-            Learn from Industry Experts and Enhance Your Skills.
-          </p>
-          <div class="introduction__buttons text-small">
-            <a href="/courses" class="btn btn--yellow text-white text-medium">Explore Courses</a>
-            <a href="/pricing" class="btn btn--white text-grey-15 text-medium">View Pricing</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="home__partners partners" data-controller="interactive-border">
-      <h2 class="visually-hidden">Partners</h2>
-      <div class="container">
-        <div class="partners__body interactive-border">
-          <ul class="partners__list interactive-border__content">
-            <li class="parnters__partner">
-              <a href="#0" class="partners__link">
-                <svg class="partner__icon partner__icon--zapier">
-                  <use xlink:href="icons.svg#partner-zapier"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="parnters__partner">
-              <a href="#0" class="partners__link">
-                <svg class="partner__icon partner__icon--spotify">
-                  <use xlink:href="icons.svg#partner-spotify"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="parnters__partner">
-              <a href="#0" class="partners__link">
-                <svg class="partner__icon partner__icon--zoom">
-                  <use xlink:href="icons.svg#partner-zoom"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="parnters__partner">
-              <a href="#0" class="partners__link">
-                <svg class="partner__icon partner__icon--amazon">
-                  <use xlink:href="icons.svg#partner-amazon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="parnters__partner">
-              <a href="#0" class="partners__link">
-                <svg class="partner__icon partner__icon--adobe">
-                  <use xlink:href="icons.svg#partner-adobe"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="parnters__partner">
-              <a href="#0" class="partners__link">
-                <svg class="partner__icon partner__icon--notion">
-                  <use xlink:href="icons.svg#partner-notion"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="parnters__partner">
-              <a href="#0" class="partners__link">
-                <svg class="partner__icon partner__icon--netflix">
-                  <use xlink:href="icons.svg#partner-netflix"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="home__video video" data-controller="video" data-video-id-value="dQw4w9WgXcQ">
-      <h2 class="visually-hidden">Video</h2>
-      <div class="container">
-        <div class="video__body">
-          <div class="video__image-wrapper">
-            <img class="video__image" src="/src/assets/images/video/video__image1.png" alt="video thumbnail" />
-          </div>
-          <button class="video__play-btn" data-video-target="playButton">
-            <svg class="icon-44">
-              <use xlink:href="icons.svg#play"></use>
-            </svg>
-          </button>
-          <div class="video__container" data-video-target="container"></div>
-        </div>
-      </div>
-    </section>
-    <section class="home__benefits benefits">
-      <div class="container">
-        <div class="benefits__body">
-          <div class="benefits__section-header section-header">
-            <h2 class="text-header">Benefits</h2>
-            <div class="section-header__description">
-              <p class="section-header__description-text text-grey-35">
-                Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
-                eget elit id imperdiet et. Cras eu sit dignissim lorem nibh
-                et. Ac cum eget habitasse in velit fringilla feugiat senectus
-                in.
-              </p>
-              <a href="#0" class="section-header__btn btn btn--white text-grey-15">View All</a>
+            <div class="introduction__buttons text-small">
+              <a href="/courses" class="btn btn--yellow text-white text-medium"
+                >Explore Courses</a
+              >
+              <a href="/pricing" class="btn btn--white text-grey-15 text-medium"
+                >View Pricing</a
+              >
             </div>
           </div>
-          <ul class="benefits__cards">
-            <li class="benefit-card interactive-border" data-controller="interactive-border">
-              <span class="benefit-card__number text-number interactive-border__content">01</span>
-              <div class="benefit-card__text-row interactive-border__content">
-                <h3 class="benefit-card__title text-label">
-                  Flexible Learning Schedule
-                </h3>
-                <p class="benefit-card__description text-grey-30">
-                  Fit your coursework around your existing commitments and
-                  obligations.
-                </p>
-              </div>
-              <a href="#0" class="benefit-card__btn btn btn--white-99 interactive-border__content">
-                <svg class="icon-34">
-                  <use xlink:href="icons.svg#arrow-right-up"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="benefit-card interactive-border" data-controller="interactive-border">
-              <span class="benefit-card__number text-number interactive-border__content">02</span>
-              <div class="benefit-card__text-row interactive-border__content">
-                <h3 class="benefit-card__title text-label">
-                  Expert Instruction
-                </h3>
-                <p class="benefit-card__description text-grey-30">
-                  Learn from industry experts who have hands-on experience in
-                  design and development.
-                </p>
-              </div>
-              <a href="#0" class="benefit-card__btn btn btn--white-99 interactive-border__content">
-                <svg class="icon-34">
-                  <use xlink:href="icons.svg#arrow-right-up"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="benefit-card interactive-border" data-controller="interactive-border">
-              <span class="benefit-card__number text-number interactive-border__content">03</span>
-              <div class="benefit-card__text-row interactive-border__content">
-                <h3 class="benefit-card__title text-label">
-                  Diverse Course Offerings
-                </h3>
-                <p class="benefit-card__description text-grey-30">
-                  Explore a wide range of design and development courses
-                  covering various topics.
-                </p>
-              </div>
-              <a href="#0" class="benefit-card__btn btn btn--white-99 interactive-border__content">
-                <svg class="icon-34">
-                  <use xlink:href="icons.svg#arrow-right-up"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="benefit-card interactive-border" data-controller="interactive-border">
-              <span class="benefit-card__number text-number interactive-border__content">04</span>
-              <div class="benefit-card__text-row interactive-border__content">
-                <h3 class="benefit-card__title text-label">
-                  Updated Curriculum
-                </h3>
-                <p class="benefit-card__description text-grey-30">
-                  Access courses with up-to-date content reflecting the latest
-                  trends and industry practices.
-                </p>
-              </div>
-              <a href="#0" class="benefit-card__btn btn btn--white-99 interactive-border__content">
-                <svg class="icon-34">
-                  <use xlink:href="icons.svg#arrow-right-up"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="benefit-card interactive-border" data-controller="interactive-border">
-              <span class="benefit-card__number text-number interactive-border__content">05</span>
-              <div class="benefit-card__text-row interactive-border__content">
-                <h3 class="benefit-card__title text-label">
-                  Practical Projects and Assignments
-                </h3>
-                <p class="benefit-card__description text-grey-30">
-                  Develop a portfolio showcasing your skills and abilities to
-                  potential employers.
-                </p>
-              </div>
-              <a href="#0" class="benefit-card__btn btn btn--white-99 interactive-border__content">
-                <svg class="icon-34">
-                  <use xlink:href="icons.svg#arrow-right-up"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="benefit-card interactive-border" data-controller="interactive-border">
-              <span class="benefit-card__number text-number interactive-border__content">06</span>
-              <div class="benefit-card__text-row interactive-border__content">
-                <h3 class="benefit-card__title text-label">
-                  Interactive Learning Environment
-                </h3>
-                <p class="benefit-card__description text-grey-30">
-                  Collaborate with fellow learners, exchanging ideas and
-                  feedback to enhance your understanding.
-                </p>
-              </div>
-              <a href="#0" class="benefit-card__btn btn btn--white-99 interactive-border__content">
-                <svg class="icon-34">
-                  <use xlink:href="icons.svg#arrow-right-up"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
         </div>
-      </div>
-    </section>
-    <section class="home__courses courses text-regular">
-      <div class="container">
-        <div class="courses__body">
-          <div class="courses__section-header section-header">
-            <h2 class="text-header">Our Courses</h2>
-            <div class="section-header__description">
-              <p class="section-header__description-text text-grey-35">
-                Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
-                eget elit id imperdiet et. Cras eu sit dignissim lorem nibh
-                et. Ac cum eget habitasse in velit fringilla feugiat senectus
-                in.
-              </p>
-              <a href="#0" class="section-header__btn btn btn--white text-grey-15">View All</a>
-            </div>
-          </div>
-          <ul class="courses__cards">
-            <li class="course-card interactive-border" data-controller="interactive-border">
-              <div class="course-card__image-wrapper interactive-border__content">
-                <img class="course-card__image" src="src/assets/images/course-card/course-card__image1.png" />
-              </div>
-              <div class="course-card__tags-row card-tags interactive-border__content">
-                <ul class="card-tags__tags text-grey-30">
-                  <li class="card-tags__tag">4 Weeks</li>
-                  <li class="card-tags__tag">Beginner</li>
-                </ul>
-                <p class="card-tags__author text-accent">By John Smith</p>
-              </div>
-              <div class="course-card__text-row interactive-border__content">
-                <h3 class="course-card__title text-label">
-                  Web Design Fundamentals
-                </h3>
-                <p class="course-card__description text-grey-30">
-                  Learn the fundamentals of web design, including HTML, CSS,
-                  and responsive design principles. Develop the skills to
-                  create visually appealing and user-friendly websites.
-                </p>
-              </div>
-              <a href="#0" class="btn btn--white-97 text-grey-15 interactive-border__content">Get it Now</a>
-            </li>
-            <li class="course-card interactive-border" data-controller="interactive-border">
-              <div class="course-card__image-wrapper interactive-border__content">
-                <img class="course-card__image" src="src/assets/images/course-card/course-card__image2.png" />
-              </div>
-              <div class="course-card__tags-row card-tags interactive-border__content">
-                <ul class="card-tags__tags text-grey-30">
-                  <li class="card-tags__tag">6 Weeks</li>
-                  <li class="card-tags__tag">Intermediate</li>
-                </ul>
-                <p class="card-tags__author text-accent">By Emily Johnson</p>
-              </div>
-              <div class="course-card__text-row interactive-border__content">
-                <h3 class="course-card__title text-label">UI/UX Design</h3>
-                <p class="course-card__description text-grey-30">
-                  Master the art of creating intuitive user interfaces (UI)
-                  and enhancing user experiences (UX). Learn design
-                  principles, wireframing, prototyping, and usability testing
-                  techniques.
-                </p>
-              </div>
-              <a href="#0" class="btn btn--white-97 text-grey-15 interactive-border__content">Get it Now</a>
-            </li>
-            <li class="course-card interactive-border" data-controller="interactive-border">
-              <div class="course-card__image-wrapper interactive-border__content">
-                <img class="course-card__image" src="src/assets/images/course-card/course-card__image3.png" />
-              </div>
-              <div class="course-card__tags-row card-tags interactive-border__content">
-                <ul class="card-tags__tags text-grey-30">
-                  <li class="card-tags__tag">8 Weeks</li>
-                  <li class="card-tags__tag">Intermediate</li>
-                </ul>
-                <p class="card-tags__author text-accent">By David Brown</p>
-              </div>
-              <div class="course-card__text-row interactive-border__content">
-                <h3 class="course-card__title text-label">
-                  Mobile App Development
-                </h3>
-                <p class="course-card__description text-grey-30">
-                  Dive into the world of mobile app development. Learn to
-                  build native iOS and Android applications using
-                  industry-leading frameworks like Swift and Kotlin.
-                </p>
-              </div>
-              <a href="#0" class="btn btn--white-97 text-grey-15 interactive-border__content">Get it Now</a>
-            </li>
-            <li class="course-card interactive-border" data-controller="interactive-border">
-              <div class="course-card__image-wrapper interactive-border__content">
-                <img class="course-card__image" src="src/assets/images/course-card/course-card__image4.png" />
-              </div>
-              <div class="course-card__tags-row card-tags interactive-border__content">
-                <ul class="card-tags__tags text-grey-30">
-                  <li class="card-tags__tag">10 Weeks</li>
-                  <li class="card-tags__tag">Beginner</li>
-                </ul>
-                <p class="card-tags__author text-accent">By Sarah Thompson</p>
-              </div>
-              <div class="course-card__text-row interactive-border__content">
-                <h3 class="course-card__title text-label">
-                  Graphic Design for Beginners
-                </h3>
-                <p class="course-card__description text-grey-30">
-                  Discover the fundamentals of graphic design, including
-                  typography, color theory, layout design, and image
-                  manipulation techniques. Create visually stunning designs
-                  for print and digital media.
-                </p>
-              </div>
-              <a href="#0" class="btn btn--white-97 text-grey-15 interactive-border__content">Get it Now</a>
-            </li>
-            <li class="course-card interactive-border" data-controller="interactive-border">
-              <div class="course-card__image-wrapper interactive-border__content">
-                <img class="course-card__image" src="src/assets/images/course-card/course-card__image5.png" />
-              </div>
-              <div class="course-card__tags-row card-tags interactive-border__content">
-                <ul class="card-tags__tags text-grey-30">
-                  <li class="card-tags__tag">10 Weeks</li>
-                  <li class="card-tags__tag">Intermediate</li>
-                </ul>
-                <p class="card-tags__author text-accent">By Michael Adams</p>
-              </div>
-              <div class="course-card__text-row interactive-border__content">
-                <h3 class="course-card__title text-label">
-                  Front-End Web Development
-                </h3>
-                <p class="course-card__description text-grey-30">
-                  Become proficient in front-end web development. Learn HTML,
-                  CSS, JavaScript, and popular frameworks like Bootstrap and
-                  React. Build interactive and responsive websites.
-                </p>
-              </div>
-              <a href="#0" class="btn btn--white-97 text-grey-15 interactive-border__content">Get it Now</a>
-            </li>
-            <li class="course-card interactive-border" data-controller="interactive-border">
-              <div class="course-card__image-wrapper interactive-border__content">
-                <img class="course-card__image" src="src/assets/images/course-card/course-card__image6.png" />
-              </div>
-              <div class="course-card__tags-row card-tags interactive-border__content">
-                <ul class="card-tags__tags text-grey-30">
-                  <li class="card-tags__tag">6 Weeks</li>
-                  <li class="card-tags__tag">Advance</li>
-                </ul>
-                <p class="card-tags__author text-accent">
-                  By Jennifer Wilson
-                </p>
-              </div>
-              <div class="course-card__text-row interactive-border__content">
-                <h3 class="course-card__title text-label">
-                  Advanced JavaScript
-                </h3>
-                <p class="course-card__description text-grey-30">
-                  Take your JavaScript skills to the next level. Explore
-                  advanced concepts like closures, prototypes, asynchronous
-                  programming, and ES6 features. Build complex applications
-                  with confidence.
-                </p>
-              </div>
-              <a href="#0" class="btn btn--white-97 text-grey-15 interactive-border__content">Get it Now</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="home__testimonials testimonials">
-      <div class="container">
-        <div class="testimonials__body">
-          <div class="testimonials__section-header section-header">
-            <h2 class="text-header">Our Testimonials</h2>
-            <div class="section-header__description">
-              <p class="section-header__description-text text-grey-35">
-                Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
-                eget elit id imperdiet et. Cras eu sit dignissim lorem nibh
-                et. Ac cum eget habitasse in velit fringilla feugiat senectus
-                in.
-              </p>
-              <a href="#0" class="section-header__btn btn btn--white text-grey-15">View All</a>
-            </div>
-          </div>
-          <ul class="testimonials__cards">
-            <li class="testimonial-card interactive-border" data-controller="interactive-border">
-              <div class="testimonial-card__row testimonial-card__row--1 interactive-border__content">
-                <p class="testimonial-card__text text-grey-30">
-                  The web design course provided a solid foundation for me.
-                  The instructors were knowledgeable and supportive, and the
-                  interactive learning environment was engaging. I highly
-                  recommend it!
-                </p>
-              </div>
-              <div class="testimonial-card__row testimonial-card__row--2 interactive-border__content">
-                <div class="testimonial-card__author">
-                  <div class="testimonial-card__avatar-wrapper">
-                    <img class="testimonial-card__avatar"
-                      src="src/assets/images/testimonial-card/testimonial-card__image1.png" alt="Sarah L" />
-                  </div>
-                  <span class="testimonial-card__name text-medium text-grey-20">Sarah L</span>
-                </div>
-                <a class="testimonial-card__btn btn btn--white-97">Read Full Story</a>
-              </div>
-            </li>
-            <li class="testimonial-card interactive-border" data-controller="interactive-border">
-              <div class="testimonial-card__row testimonial-card__row--1 interactive-border__content">
-                <p class="testimonial-card__text text-grey-30">
-                  The UI/UX design course exceeded my expectations. The
-                  instructor's expertise and practical assignments helped me
-                  improve my design skills. I feel more confident in my career
-                  now. Thank you!
-                </p>
-              </div>
-              <div class="testimonial-card__row testimonial-card__row--2 interactive-border__content">
-                <div class="testimonial-card__author">
-                  <div class="testimonial-card__avatar-wrapper">
-                    <img class="testimonial-card__avatar"
-                      src="src/assets/images/testimonial-card/testimonial-card__image2.png" alt="Jason M" />
-                  </div>
-                  <span class="testimonial-card__name text-medium text-grey-20">Jason M</span>
-                </div>
-                <a class="testimonial-card__btn btn btn--white-97">Read Full Story</a>
-              </div>
-            </li>
-            <li class="testimonial-card interactive-border" data-controller="interactive-border">
-              <div class="testimonial-card__row testimonial-card__row--1 interactive-border__content">
-                <p class="testimonial-card__text text-grey-30">
-                  The mobile app development course was fantastic! The
-                  step-by-step tutorials and hands-on projects helped me grasp
-                  the concepts easily. I'm now building my own app. Great
-                  course!
-                </p>
-              </div>
-              <div class="testimonial-card__row testimonial-card__row--2 interactive-border__content">
-                <div class="testimonial-card__author">
-                  <div class="testimonial-card__avatar-wrapper">
-                    <img class="testimonial-card__avatar"
-                      src="src/assets/images/testimonial-card/testimonial-card__image3.png" alt="Emily R" />
-                  </div>
-                  <span class="testimonial-card__name text-medium text-grey-20">Emily R</span>
-                </div>
-                <a class="testimonial-card__btn btn btn--white-97">Read Full Story</a>
-              </div>
-            </li>
-            <li class="testimonial-card interactive-border" data-controller="interactive-border">
-              <div class="testimonial-card__row testimonial-card__row--1 interactive-border__content">
-                <p class="testimonial-card__text text-grey-30">
-                  I enrolled in the graphic design course as a beginner, and
-                  it was the perfect starting point. The instructor's guidance
-                  and feedback improved my design abilities significantly. I'm
-                  grateful for this course!
-                </p>
-              </div>
-              <div class="testimonial-card__row testimonial-card__row--2 interactive-border__content">
-                <div class="testimonial-card__author">
-                  <div class="testimonial-card__avatar-wrapper">
-                    <img class="testimonial-card__avatar"
-                      src="src/assets/images/testimonial-card/testimonial-card__image4.png" alt="Michael K" />
-                  </div>
-                  <span class="testimonial-card__name text-medium text-grey-20">Michael K</span>
-                </div>
-                <a class="testimonial-card__btn btn btn--white-97">Read Full Story</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="home__pricing pricing" data-controller="tab">
-      <div class="container">
-        <div class="pricing__body">
-          <div class="pricing__section-header section-header">
-            <h2 class="text-header">Our Courses</h2>
-            <div class="section-header__description">
-              <p class="section-header__description-text text-grey-35">
-                Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
-                eget elit id imperdiet et. Cras eu sit dignissim lorem nibh
-                et. Ac cum eget habitasse in velit fringilla feugiat senectus
-                in.
-              </p>
-              <div class="section-header__tabs">
-                <button class="section-header__tab btn active" data-tab-target="button">Monthly</button>
-                <button class="section-header__tab btn" data-tab-target="button">Yearly</button>
-              </div>
-            </div>
-            <ul class="pricing__tabs">
-              <li class="pricing__tab active" data-tab-target="frame">
-                <ul class="pricing__cards">
-                  <li class="pricing-card interactive-border interactive-border--white-99"
-                    data-controller="interactive-border">
-                    <h3 class="pricing-card__header text-accent text-accent--bigger interactive-border__content">Free
-                      Plan</h3>
-                    <div class="pricing-card__price interactive-border__content">
-                      <span class="text-number">$0</span>
-                      <span class="text-accent text-grey-30"> /month</span>
-                    </div>
-                    <div class="pricing-card__content interactive-border__content">
-                      <h4 class="pricing-card__feature-header text-accent">Available Features</h4>
-                      <ul class="pricing-card__features text-grey-30">
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Access to selected free courses.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Limited course materials and resources.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Basic community support.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            No certification upon completion.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Ad-supported platform.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper pricing-card__icon-wrapper--transparent">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#cross"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Access to exclusive Pro Plan community forums.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper pricing-card__icon-wrapper--transparent">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#cross"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Early access to new courses and updates.
-                          </span>
-                        </li>
-                      </ul>
-                      <a href="#0" class="pricing-card__btn btn btn--yellow text-white">Get Started</a>
-                    </div>
-                  </li>
-                  <li class="pricing-card interactive-border interactive-border--white-99"
-                    data-controller="interactive-border">
-                    <h3 class="pricing-card__header text-accent text-accent--bigger interactive-border__content">Pro
-                      Plan</h3>
-                    <div class="pricing-card__price interactive-border__content">
-                      <span class="text-number">$79</span>
-                      <span class="text-accent text-grey-30"> /month</span>
-                    </div>
-                    <div class="pricing-card__content interactive-border__content">
-                      <h4 class="pricing-card__feature-header text-accent">Available Features</h4>
-                      <ul class="pricing-card__features text-grey-30">
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Unlimited access to all courses.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Unlimited course materials and resources.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Priority support from instructors.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Course completion certificates.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Ad-free experience.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Access to exclusive Pro Plan community forums.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Early access to new courses and updates.
-                          </span>
-                        </li>
-                      </ul>
-                      <a href="#0" class="pricing-card__btn btn btn--yellow text-white">Get Started</a>
-                    </div>
-                  </li>
-                </ul>
+      </section>
+      <section
+        class="home__partners partners"
+        data-controller="interactive-border"
+      >
+        <h2 class="visually-hidden">Partners</h2>
+        <div class="container">
+          <div class="partners__body interactive-border">
+            <ul class="partners__list interactive-border__content">
+              <li class="parnters__partner">
+                <a href="#0" class="partners__link">
+                  <svg class="partner__icon partner__icon--zapier">
+                    <use xlink:href="icons.svg#partner-zapier"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="pricing__tab" data-tab-target="frame">
-                <ul class="pricing__cards">
-                  <li class="pricing-card interactive-border interactive-border--white-99"
-                    data-controller="interactive-border">
-                    <h3 class="pricing-card__header text-accent text-accent--bigger interactive-border__content">Pro
-                      Plan</h3>
-                    <div class="pricing-card__price interactive-border__content">
-                      <span class="text-number">$55</span>
-                      <span class="text-accent text-grey-30"> /month</span>
-                    </div>
-                    <div class="pricing-card__content interactive-border__content">
-                      <h4 class="pricing-card__feature-header text-accent">Available Features</h4>
-                      <ul class="pricing-card__features text-grey-30">
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Unlimited access to all courses.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Unlimited course materials and resources.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Priority support from instructors.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Course completion certificates.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Ad-free experience.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Access to exclusive Pro Plan community forums.
-                          </span>
-                        </li>
-                        <li class="pricing-card__feature">
-                          <div class="pricing-card__icon-wrapper">
-                            <svg class="icon-20">
-                              <use xlink:href="icons.svg#checked"></use>
-                            </svg>
-                          </div>
-                          <span class="pricing-card__feature-text">
-                            Early access to new courses and updates.
-                          </span>
-                        </li>
-                      </ul>
-                      <a href="#0" class="pricing-card__btn btn btn--yellow text-white">Get Started</a>
-                    </div>
-                  </li>
-                </ul>
+              <li class="parnters__partner">
+                <a href="#0" class="partners__link">
+                  <svg class="partner__icon partner__icon--spotify">
+                    <use xlink:href="icons.svg#partner-spotify"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="parnters__partner">
+                <a href="#0" class="partners__link">
+                  <svg class="partner__icon partner__icon--zoom">
+                    <use xlink:href="icons.svg#partner-zoom"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="parnters__partner">
+                <a href="#0" class="partners__link">
+                  <svg class="partner__icon partner__icon--amazon">
+                    <use xlink:href="icons.svg#partner-amazon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="parnters__partner">
+                <a href="#0" class="partners__link">
+                  <svg class="partner__icon partner__icon--adobe">
+                    <use xlink:href="icons.svg#partner-adobe"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="parnters__partner">
+                <a href="#0" class="partners__link">
+                  <svg class="partner__icon partner__icon--notion">
+                    <use xlink:href="icons.svg#partner-notion"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="parnters__partner">
+                <a href="#0" class="partners__link">
+                  <svg class="partner__icon partner__icon--netflix">
+                    <use xlink:href="icons.svg#partner-netflix"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="home__faq faq">
-      <div class="container">
-        <div class="faq__body">
-          <div class="faq__header">
-            <h2 class="faq__title text-header">
-              Frequently
-              <br />
-              Asked Questions
-            </h2>
-            <p class="faq__text text-grey-20">
-              Still you have any questions? Contact our Team via <a href="mailto:support@skillbridge.com"
-                class="text-link text-grey-20">support@skillbridge.com</a>
-            </p>
-            <a href="#0" class="faq__btn btn btn--white text-grey-15">See All FAQ’s</a>
+      </section>
+      <section
+        class="home__video video"
+        data-controller="video"
+        data-video-id-value="dQw4w9WgXcQ"
+      >
+        <h2 class="visually-hidden">Video</h2>
+        <div class="container">
+          <div class="video__body">
+            <div class="video__image-wrapper">
+              <img
+                class="video__image"
+                src="/src/assets/images/video/video__image1.png"
+                alt="video thumbnail"
+              />
+            </div>
+            <button class="video__play-btn" data-video-target="playButton">
+              <svg class="icon-44">
+                <use xlink:href="icons.svg#play"></use>
+              </svg>
+            </button>
+            <div class="video__container" data-video-target="container"></div>
           </div>
-          <ul class="faq__accordion accordion">
-            <li class="accordion__item interactive-border" data-controller="interactive-border accordion">
-              <div class="accordion__header interactive-border__content">
-                <h3 class="accordion__title text-accent">Can I enroll in multiple courses at once?</h3>
-                <button class="accordion__btn-wrapper btn" data-accordion-target="button">
-                  <svg class="accordion__plus icon-28">
-                    <use xlink:href="icons.svg#plus"></use>
-                  </svg>
-                  <svg class="accordion__cross icon-28">
-                    <use xlink:href="icons.svg#cross"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="accordion__content interactive-border__content" data-accordion-target="content">
-                <p class="accordion__text text-grey-30">
-                  Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.
-                </p>
-                <div class="accordion__link-wrapper text-grey-20 text-medium">
-                  Enrollment Process for Different
-                  Courses
-                  <a href="#0" class="accordion__btn-wrapper accordion__btn-wrapper--round btn">
-                    <svg class="accordion__arrow-right icon-28">
-                      <use xlink:href="icons.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="accordion__item interactive-border" data-controller="interactive-border accordion">
-              <div class="accordion__header interactive-border__content">
-                <h3 class="accordion__title text-accent">What kind of support can I expect from instructors?</h3>
-                <button class="accordion__btn-wrapper btn" data-accordion-target="button">
-                  <svg class="accordion__plus icon-28">
-                    <use xlink:href="icons.svg#plus"></use>
-                  </svg>
-                  <svg class="accordion__cross icon-28">
-                    <use xlink:href="icons.svg#cross"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="accordion__content interactive-border__content" data-accordion-target="content">
-                <p class="accordion__text text-grey-30">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, reprehenderit.
-                </p>
-                <div class="accordion__link-wrapper text-grey-20 text-medium">
-                  <span>
-                    Lorem ipsum dolor sit amet.
-                  </span>
-                  <a href="#0" class="accordion__btn-wrapper accordion__btn-wrapper--round btn">
-                    <svg class="accordion__arrow-right icon-28">
-                      <use xlink:href="icons.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="accordion__item interactive-border" data-controller="interactive-border accordion">
-              <div class="accordion__header interactive-border__content">
-                <h3 class="accordion__title text-accent">Are the courses self-paced or do they have specific start and
-                  end dates?</h3>
-                <button class="accordion__btn-wrapper btn" data-accordion-target="button">
-                  <svg class="accordion__plus icon-28">
-                    <use xlink:href="icons.svg#plus"></use>
-                  </svg>
-                  <svg class="accordion__cross icon-28">
-                    <use xlink:href="icons.svg#cross"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="accordion__content interactive-border__content" data-accordion-target="content">
-                <p class="accordion__text text-grey-30">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, reprehenderit.
-                </p>
-                <div class="accordion__link-wrapper text-grey-20 text-medium">
-                  <span>
-                    Lorem ipsum dolor sit amet.
-                  </span>
-                  <a href="#0" class="accordion__btn-wrapper accordion__btn-wrapper--round btn">
-                    <svg class="accordion__arrow-right icon-28">
-                      <use xlink:href="icons.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="accordion__item interactive-border" data-controller="interactive-border accordion">
-              <div class="accordion__header interactive-border__content">
-                <h3 class="accordion__title text-accent">Are there any prerequisites for the courses?</h3>
-                <button class="accordion__btn-wrapper btn" data-accordion-target="button">
-                  <svg class="accordion__plus icon-28">
-                    <use xlink:href="icons.svg#plus"></use>
-                  </svg>
-                  <svg class="accordion__cross icon-28">
-                    <use xlink:href="icons.svg#cross"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="accordion__content interactive-border__content" data-accordion-target="content">
-                <p class="accordion__text text-grey-30">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, reprehenderit.
-                </p>
-                <div class="accordion__link-wrapper text-grey-20 text-medium">
-                  <span>
-                    Lorem ipsum dolor sit amet.
-                  </span>
-                  <a href="#0" class="accordion__btn-wrapper accordion__btn-wrapper--round btn">
-                    <svg class="accordion__arrow-right icon-28">
-                      <use xlink:href="icons.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="accordion__item interactive-border" data-controller="interactive-border accordion">
-              <div class="accordion__header interactive-border__content">
-                <h3 class="accordion__title text-accent">Can I download the course materials for offline access?</h3>
-                <button class="accordion__btn-wrapper btn" data-accordion-target="button">
-                  <svg class="accordion__plus icon-28">
-                    <use xlink:href="icons.svg#plus"></use>
-                  </svg>
-                  <svg class="accordion__cross icon-28">
-                    <use xlink:href="icons.svg#cross"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="accordion__content interactive-border__content" data-accordion-target="content">
-                <p class="accordion__text text-grey-30">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, reprehenderit.
-                </p>
-                <div class="accordion__link-wrapper text-grey-20 text-medium">
-                  <span>
-                    Lorem ipsum dolor sit amet.
-                  </span>
-                  <a href="#0" class="accordion__btn-wrapper accordion__btn-wrapper--round btn">
-                    <svg class="accordion__arrow-right icon-28">
-                      <use xlink:href="icons.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
         </div>
-      </div>
-    </section>
-  </main>
-  {{> footer}}
-  <script type="module" src="/src/ts/application.ts"></script>
-</body>
-
+      </section>
+      <section class="home__benefits benefits">
+        <div class="container">
+          <div class="benefits__body">
+            <div class="benefits__section-header section-header">
+              <h2 class="text-header">Benefits</h2>
+              <div class="section-header__description">
+                <p class="section-header__description-text text-grey-35">
+                  Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
+                  eget elit id imperdiet et. Cras eu sit dignissim lorem nibh
+                  et. Ac cum eget habitasse in velit fringilla feugiat senectus
+                  in.
+                </p>
+                <a
+                  href="#0"
+                  class="section-header__btn btn btn--white text-grey-15"
+                  >View All</a
+                >
+              </div>
+            </div>
+            <ul class="benefits__cards">
+              <li
+                class="benefit-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <span
+                  class="benefit-card__number text-number interactive-border__content"
+                  >01</span
+                >
+                <div class="benefit-card__text-row interactive-border__content">
+                  <h3 class="benefit-card__title text-label">
+                    Flexible Learning Schedule
+                  </h3>
+                  <p class="benefit-card__description text-grey-30">
+                    Fit your coursework around your existing commitments and
+                    obligations.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="benefit-card__btn btn btn--white-99 interactive-border__content"
+                >
+                  <svg class="icon-34">
+                    <use xlink:href="icons.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="benefit-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <span
+                  class="benefit-card__number text-number interactive-border__content"
+                  >02</span
+                >
+                <div class="benefit-card__text-row interactive-border__content">
+                  <h3 class="benefit-card__title text-label">
+                    Expert Instruction
+                  </h3>
+                  <p class="benefit-card__description text-grey-30">
+                    Learn from industry experts who have hands-on experience in
+                    design and development.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="benefit-card__btn btn btn--white-99 interactive-border__content"
+                >
+                  <svg class="icon-34">
+                    <use xlink:href="icons.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="benefit-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <span
+                  class="benefit-card__number text-number interactive-border__content"
+                  >03</span
+                >
+                <div class="benefit-card__text-row interactive-border__content">
+                  <h3 class="benefit-card__title text-label">
+                    Diverse Course Offerings
+                  </h3>
+                  <p class="benefit-card__description text-grey-30">
+                    Explore a wide range of design and development courses
+                    covering various topics.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="benefit-card__btn btn btn--white-99 interactive-border__content"
+                >
+                  <svg class="icon-34">
+                    <use xlink:href="icons.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="benefit-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <span
+                  class="benefit-card__number text-number interactive-border__content"
+                  >04</span
+                >
+                <div class="benefit-card__text-row interactive-border__content">
+                  <h3 class="benefit-card__title text-label">
+                    Updated Curriculum
+                  </h3>
+                  <p class="benefit-card__description text-grey-30">
+                    Access courses with up-to-date content reflecting the latest
+                    trends and industry practices.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="benefit-card__btn btn btn--white-99 interactive-border__content"
+                >
+                  <svg class="icon-34">
+                    <use xlink:href="icons.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="benefit-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <span
+                  class="benefit-card__number text-number interactive-border__content"
+                  >05</span
+                >
+                <div class="benefit-card__text-row interactive-border__content">
+                  <h3 class="benefit-card__title text-label">
+                    Practical Projects and Assignments
+                  </h3>
+                  <p class="benefit-card__description text-grey-30">
+                    Develop a portfolio showcasing your skills and abilities to
+                    potential employers.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="benefit-card__btn btn btn--white-99 interactive-border__content"
+                >
+                  <svg class="icon-34">
+                    <use xlink:href="icons.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="benefit-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <span
+                  class="benefit-card__number text-number interactive-border__content"
+                  >06</span
+                >
+                <div class="benefit-card__text-row interactive-border__content">
+                  <h3 class="benefit-card__title text-label">
+                    Interactive Learning Environment
+                  </h3>
+                  <p class="benefit-card__description text-grey-30">
+                    Collaborate with fellow learners, exchanging ideas and
+                    feedback to enhance your understanding.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="benefit-card__btn btn btn--white-99 interactive-border__content"
+                >
+                  <svg class="icon-34">
+                    <use xlink:href="icons.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="home__courses courses text-regular">
+        <div class="container">
+          <div class="courses__body">
+            <div class="courses__section-header section-header">
+              <h2 class="text-header">Our Courses</h2>
+              <div class="section-header__description">
+                <p class="section-header__description-text text-grey-35">
+                  Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
+                  eget elit id imperdiet et. Cras eu sit dignissim lorem nibh
+                  et. Ac cum eget habitasse in velit fringilla feugiat senectus
+                  in.
+                </p>
+                <a
+                  href="#0"
+                  class="section-header__btn btn btn--white text-grey-15"
+                  >View All</a
+                >
+              </div>
+            </div>
+            <ul class="courses__cards">
+              <li
+                class="course-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <div
+                  class="course-card__image-wrapper interactive-border__content"
+                >
+                  <img
+                    class="course-card__image"
+                    src="src/assets/images/courses/courses__image1.png"
+                  />
+                </div>
+                <div
+                  class="course-card__tags-row card-tags interactive-border__content"
+                >
+                  <ul class="card-tags__tags text-grey-30">
+                    <li class="card-tags__tag">4 Weeks</li>
+                    <li class="card-tags__tag">Beginner</li>
+                  </ul>
+                  <p class="card-tags__author text-accent">By John Smith</p>
+                </div>
+                <div class="course-card__text-row interactive-border__content">
+                  <h3 class="course-card__title text-label">
+                    Web Design Fundamentals
+                  </h3>
+                  <p class="course-card__description text-grey-30">
+                    Learn the fundamentals of web design, including HTML, CSS,
+                    and responsive design principles. Develop the skills to
+                    create visually appealing and user-friendly websites.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="btn btn--white-97 text-grey-15 interactive-border__content"
+                  >Get it Now</a
+                >
+              </li>
+              <li
+                class="course-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <div
+                  class="course-card__image-wrapper interactive-border__content"
+                >
+                  <img
+                    class="course-card__image"
+                    src="src/assets/images/courses/courses__image2.png"
+                  />
+                </div>
+                <div
+                  class="course-card__tags-row card-tags interactive-border__content"
+                >
+                  <ul class="card-tags__tags text-grey-30">
+                    <li class="card-tags__tag">6 Weeks</li>
+                    <li class="card-tags__tag">Intermediate</li>
+                  </ul>
+                  <p class="card-tags__author text-accent">By Emily Johnson</p>
+                </div>
+                <div class="course-card__text-row interactive-border__content">
+                  <h3 class="course-card__title text-label">UI/UX Design</h3>
+                  <p class="course-card__description text-grey-30">
+                    Master the art of creating intuitive user interfaces (UI)
+                    and enhancing user experiences (UX). Learn design
+                    principles, wireframing, prototyping, and usability testing
+                    techniques.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="btn btn--white-97 text-grey-15 interactive-border__content"
+                  >Get it Now</a
+                >
+              </li>
+              <li
+                class="course-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <div
+                  class="course-card__image-wrapper interactive-border__content"
+                >
+                  <img
+                    class="course-card__image"
+                    src="src/assets/images/courses/courses__image3.png"
+                  />
+                </div>
+                <div
+                  class="course-card__tags-row card-tags interactive-border__content"
+                >
+                  <ul class="card-tags__tags text-grey-30">
+                    <li class="card-tags__tag">8 Weeks</li>
+                    <li class="card-tags__tag">Intermediate</li>
+                  </ul>
+                  <p class="card-tags__author text-accent">By David Brown</p>
+                </div>
+                <div class="course-card__text-row interactive-border__content">
+                  <h3 class="course-card__title text-label">
+                    Mobile App Development
+                  </h3>
+                  <p class="course-card__description text-grey-30">
+                    Dive into the world of mobile app development. Learn to
+                    build native iOS and Android applications using
+                    industry-leading frameworks like Swift and Kotlin.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="btn btn--white-97 text-grey-15 interactive-border__content"
+                  >Get it Now</a
+                >
+              </li>
+              <li
+                class="course-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <div
+                  class="course-card__image-wrapper interactive-border__content"
+                >
+                  <img
+                    class="course-card__image"
+                    src="src/assets/images/courses/courses__image4.png"
+                  />
+                </div>
+                <div
+                  class="course-card__tags-row card-tags interactive-border__content"
+                >
+                  <ul class="card-tags__tags text-grey-30">
+                    <li class="card-tags__tag">10 Weeks</li>
+                    <li class="card-tags__tag">Beginner</li>
+                  </ul>
+                  <p class="card-tags__author text-accent">By Sarah Thompson</p>
+                </div>
+                <div class="course-card__text-row interactive-border__content">
+                  <h3 class="course-card__title text-label">
+                    Graphic Design for Beginners
+                  </h3>
+                  <p class="course-card__description text-grey-30">
+                    Discover the fundamentals of graphic design, including
+                    typography, color theory, layout design, and image
+                    manipulation techniques. Create visually stunning designs
+                    for print and digital media.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="btn btn--white-97 text-grey-15 interactive-border__content"
+                  >Get it Now</a
+                >
+              </li>
+              <li
+                class="course-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <div
+                  class="course-card__image-wrapper interactive-border__content"
+                >
+                  <img
+                    class="course-card__image"
+                    src="src/assets/images/courses/courses__image5.png"
+                  />
+                </div>
+                <div
+                  class="course-card__tags-row card-tags interactive-border__content"
+                >
+                  <ul class="card-tags__tags text-grey-30">
+                    <li class="card-tags__tag">10 Weeks</li>
+                    <li class="card-tags__tag">Intermediate</li>
+                  </ul>
+                  <p class="card-tags__author text-accent">By Michael Adams</p>
+                </div>
+                <div class="course-card__text-row interactive-border__content">
+                  <h3 class="course-card__title text-label">
+                    Front-End Web Development
+                  </h3>
+                  <p class="course-card__description text-grey-30">
+                    Become proficient in front-end web development. Learn HTML,
+                    CSS, JavaScript, and popular frameworks like Bootstrap and
+                    React. Build interactive and responsive websites.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="btn btn--white-97 text-grey-15 interactive-border__content"
+                  >Get it Now</a
+                >
+              </li>
+              <li
+                class="course-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <div
+                  class="course-card__image-wrapper interactive-border__content"
+                >
+                  <img
+                    class="course-card__image"
+                    src="src/assets/images/courses/courses__image6.png"
+                  />
+                </div>
+                <div
+                  class="course-card__tags-row card-tags interactive-border__content"
+                >
+                  <ul class="card-tags__tags text-grey-30">
+                    <li class="card-tags__tag">6 Weeks</li>
+                    <li class="card-tags__tag">Advance</li>
+                  </ul>
+                  <p class="card-tags__author text-accent">
+                    By Jennifer Wilson
+                  </p>
+                </div>
+                <div class="course-card__text-row interactive-border__content">
+                  <h3 class="course-card__title text-label">
+                    Advanced JavaScript
+                  </h3>
+                  <p class="course-card__description text-grey-30">
+                    Take your JavaScript skills to the next level. Explore
+                    advanced concepts like closures, prototypes, asynchronous
+                    programming, and ES6 features. Build complex applications
+                    with confidence.
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="btn btn--white-97 text-grey-15 interactive-border__content"
+                  >Get it Now</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="home__testimonials testimonials">
+        <div class="container">
+          <div class="testimonials__body">
+            <div class="testimonials__section-header section-header">
+              <h2 class="text-header">Our Testimonials</h2>
+              <div class="section-header__description">
+                <p class="section-header__description-text text-grey-35">
+                  Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
+                  eget elit id imperdiet et. Cras eu sit dignissim lorem nibh
+                  et. Ac cum eget habitasse in velit fringilla feugiat senectus
+                  in.
+                </p>
+                <a
+                  href="#0"
+                  class="section-header__btn btn btn--white text-grey-15"
+                  >View All</a
+                >
+              </div>
+            </div>
+            <ul class="testimonials__cards">
+              <li
+                class="testimonial-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <div
+                  class="testimonial-card__row testimonial-card__row--1 interactive-border__content"
+                >
+                  <p class="testimonial-card__text text-grey-30">
+                    The web design course provided a solid foundation for me.
+                    The instructors were knowledgeable and supportive, and the
+                    interactive learning environment was engaging. I highly
+                    recommend it!
+                  </p>
+                </div>
+                <div
+                  class="testimonial-card__row testimonial-card__row--2 interactive-border__content"
+                >
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar-wrapper">
+                      <img
+                        class="testimonial-card__avatar"
+                        src="src/assets/images/testimonial-card/testimonial-card__image1.png"
+                        alt="Sarah L"
+                      />
+                    </div>
+                    <span
+                      class="testimonial-card__name text-medium text-grey-20"
+                      >Sarah L</span
+                    >
+                  </div>
+                  <a class="testimonial-card__btn btn btn--white-97"
+                    >Read Full Story</a
+                  >
+                </div>
+              </li>
+              <li
+                class="testimonial-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <div
+                  class="testimonial-card__row testimonial-card__row--1 interactive-border__content"
+                >
+                  <p class="testimonial-card__text text-grey-30">
+                    The UI/UX design course exceeded my expectations. The
+                    instructor's expertise and practical assignments helped me
+                    improve my design skills. I feel more confident in my career
+                    now. Thank you!
+                  </p>
+                </div>
+                <div
+                  class="testimonial-card__row testimonial-card__row--2 interactive-border__content"
+                >
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar-wrapper">
+                      <img
+                        class="testimonial-card__avatar"
+                        src="src/assets/images/testimonial-card/testimonial-card__image2.png"
+                        alt="Jason M"
+                      />
+                    </div>
+                    <span
+                      class="testimonial-card__name text-medium text-grey-20"
+                      >Jason M</span
+                    >
+                  </div>
+                  <a class="testimonial-card__btn btn btn--white-97"
+                    >Read Full Story</a
+                  >
+                </div>
+              </li>
+              <li
+                class="testimonial-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <div
+                  class="testimonial-card__row testimonial-card__row--1 interactive-border__content"
+                >
+                  <p class="testimonial-card__text text-grey-30">
+                    The mobile app development course was fantastic! The
+                    step-by-step tutorials and hands-on projects helped me grasp
+                    the concepts easily. I'm now building my own app. Great
+                    course!
+                  </p>
+                </div>
+                <div
+                  class="testimonial-card__row testimonial-card__row--2 interactive-border__content"
+                >
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar-wrapper">
+                      <img
+                        class="testimonial-card__avatar"
+                        src="src/assets/images/testimonial-card/testimonial-card__image3.png"
+                        alt="Emily R"
+                      />
+                    </div>
+                    <span
+                      class="testimonial-card__name text-medium text-grey-20"
+                      >Emily R</span
+                    >
+                  </div>
+                  <a class="testimonial-card__btn btn btn--white-97"
+                    >Read Full Story</a
+                  >
+                </div>
+              </li>
+              <li
+                class="testimonial-card interactive-border"
+                data-controller="interactive-border"
+              >
+                <div
+                  class="testimonial-card__row testimonial-card__row--1 interactive-border__content"
+                >
+                  <p class="testimonial-card__text text-grey-30">
+                    I enrolled in the graphic design course as a beginner, and
+                    it was the perfect starting point. The instructor's guidance
+                    and feedback improved my design abilities significantly. I'm
+                    grateful for this course!
+                  </p>
+                </div>
+                <div
+                  class="testimonial-card__row testimonial-card__row--2 interactive-border__content"
+                >
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar-wrapper">
+                      <img
+                        class="testimonial-card__avatar"
+                        src="src/assets/images/testimonial-card/testimonial-card__image4.png"
+                        alt="Michael K"
+                      />
+                    </div>
+                    <span
+                      class="testimonial-card__name text-medium text-grey-20"
+                      >Michael K</span
+                    >
+                  </div>
+                  <a class="testimonial-card__btn btn btn--white-97"
+                    >Read Full Story</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="home__pricing pricing" data-controller="tab">
+        <div class="container">
+          <div class="pricing__body">
+            <div class="pricing__section-header section-header">
+              <h2 class="text-header">Our Courses</h2>
+              <div class="section-header__description">
+                <p class="section-header__description-text text-grey-35">
+                  Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
+                  eget elit id imperdiet et. Cras eu sit dignissim lorem nibh
+                  et. Ac cum eget habitasse in velit fringilla feugiat senectus
+                  in.
+                </p>
+                <div class="section-header__tabs">
+                  <button
+                    class="section-header__tab btn active"
+                    data-tab-target="button"
+                  >
+                    Monthly
+                  </button>
+                  <button
+                    class="section-header__tab btn"
+                    data-tab-target="button"
+                  >
+                    Yearly
+                  </button>
+                </div>
+              </div>
+              <ul class="pricing__tabs">
+                <li class="pricing__tab active" data-tab-target="frame">
+                  <ul class="pricing__cards">
+                    <li
+                      class="pricing-card interactive-border interactive-border--white-99"
+                      data-controller="interactive-border"
+                    >
+                      <h3
+                        class="pricing-card__header text-accent text-accent--bigger interactive-border__content"
+                      >
+                        Free Plan
+                      </h3>
+                      <div
+                        class="pricing-card__price interactive-border__content"
+                      >
+                        <span class="text-number">$0</span>
+                        <span class="text-accent text-grey-30"> /month</span>
+                      </div>
+                      <div
+                        class="pricing-card__content interactive-border__content"
+                      >
+                        <h4 class="pricing-card__feature-header text-accent">
+                          Available Features
+                        </h4>
+                        <ul class="pricing-card__features text-grey-30">
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Access to selected free courses.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Limited course materials and resources.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Basic community support.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              No certification upon completion.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Ad-supported platform.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div
+                              class="pricing-card__icon-wrapper pricing-card__icon-wrapper--transparent"
+                            >
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#cross"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Access to exclusive Pro Plan community forums.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div
+                              class="pricing-card__icon-wrapper pricing-card__icon-wrapper--transparent"
+                            >
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#cross"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Early access to new courses and updates.
+                            </span>
+                          </li>
+                        </ul>
+                        <a
+                          href="#0"
+                          class="pricing-card__btn btn btn--yellow text-white"
+                          >Get Started</a
+                        >
+                      </div>
+                    </li>
+                    <li
+                      class="pricing-card interactive-border interactive-border--white-99"
+                      data-controller="interactive-border"
+                    >
+                      <h3
+                        class="pricing-card__header text-accent text-accent--bigger interactive-border__content"
+                      >
+                        Pro Plan
+                      </h3>
+                      <div
+                        class="pricing-card__price interactive-border__content"
+                      >
+                        <span class="text-number">$79</span>
+                        <span class="text-accent text-grey-30"> /month</span>
+                      </div>
+                      <div
+                        class="pricing-card__content interactive-border__content"
+                      >
+                        <h4 class="pricing-card__feature-header text-accent">
+                          Available Features
+                        </h4>
+                        <ul class="pricing-card__features text-grey-30">
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Unlimited access to all courses.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Unlimited course materials and resources.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Priority support from instructors.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Course completion certificates.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Ad-free experience.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Access to exclusive Pro Plan community forums.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Early access to new courses and updates.
+                            </span>
+                          </li>
+                        </ul>
+                        <a
+                          href="#0"
+                          class="pricing-card__btn btn btn--yellow text-white"
+                          >Get Started</a
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pricing__tab" data-tab-target="frame">
+                  <ul class="pricing__cards">
+                    <li
+                      class="pricing-card interactive-border interactive-border--white-99"
+                      data-controller="interactive-border"
+                    >
+                      <h3
+                        class="pricing-card__header text-accent text-accent--bigger interactive-border__content"
+                      >
+                        Pro Plan
+                      </h3>
+                      <div
+                        class="pricing-card__price interactive-border__content"
+                      >
+                        <span class="text-number">$55</span>
+                        <span class="text-accent text-grey-30"> /month</span>
+                      </div>
+                      <div
+                        class="pricing-card__content interactive-border__content"
+                      >
+                        <h4 class="pricing-card__feature-header text-accent">
+                          Available Features
+                        </h4>
+                        <ul class="pricing-card__features text-grey-30">
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Unlimited access to all courses.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Unlimited course materials and resources.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Priority support from instructors.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Course completion certificates.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Ad-free experience.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Access to exclusive Pro Plan community forums.
+                            </span>
+                          </li>
+                          <li class="pricing-card__feature">
+                            <div class="pricing-card__icon-wrapper">
+                              <svg class="icon-20">
+                                <use xlink:href="icons.svg#checked"></use>
+                              </svg>
+                            </div>
+                            <span class="pricing-card__feature-text">
+                              Early access to new courses and updates.
+                            </span>
+                          </li>
+                        </ul>
+                        <a
+                          href="#0"
+                          class="pricing-card__btn btn btn--yellow text-white"
+                          >Get Started</a
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home__faq faq">
+        <div class="container">
+          <div class="faq__body">
+            <div class="faq__header">
+              <h2 class="faq__title text-header">
+                Frequently
+                <br />
+                Asked Questions
+              </h2>
+              <p class="faq__text text-grey-20">
+                Still you have any questions? Contact our Team via
+                <a
+                  href="mailto:support@skillbridge.com"
+                  class="text-link text-grey-20"
+                  >support@skillbridge.com</a
+                >
+              </p>
+              <a href="#0" class="faq__btn btn btn--white text-grey-15"
+                >See All FAQ’s</a
+              >
+            </div>
+            <ul class="faq__accordion accordion">
+              <li
+                class="accordion__item interactive-border"
+                data-controller="interactive-border accordion"
+              >
+                <div class="accordion__header interactive-border__content">
+                  <h3 class="accordion__title text-accent">
+                    Can I enroll in multiple courses at once?
+                  </h3>
+                  <button
+                    class="accordion__btn-wrapper btn"
+                    data-accordion-target="button"
+                  >
+                    <svg class="accordion__plus icon-28">
+                      <use xlink:href="icons.svg#plus"></use>
+                    </svg>
+                    <svg class="accordion__cross icon-28">
+                      <use xlink:href="icons.svg#cross"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="accordion__content interactive-border__content"
+                  data-accordion-target="content"
+                >
+                  <p class="accordion__text text-grey-30">
+                    Absolutely! You can enroll in multiple courses
+                    simultaneously and access them at your convenience.
+                  </p>
+                  <div class="accordion__link-wrapper text-grey-20 text-medium">
+                    Enrollment Process for Different Courses
+                    <a
+                      href="#0"
+                      class="accordion__btn-wrapper accordion__btn-wrapper--round btn"
+                    >
+                      <svg class="accordion__arrow-right icon-28">
+                        <use xlink:href="icons.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="accordion__item interactive-border"
+                data-controller="interactive-border accordion"
+              >
+                <div class="accordion__header interactive-border__content">
+                  <h3 class="accordion__title text-accent">
+                    What kind of support can I expect from instructors?
+                  </h3>
+                  <button
+                    class="accordion__btn-wrapper btn"
+                    data-accordion-target="button"
+                  >
+                    <svg class="accordion__plus icon-28">
+                      <use xlink:href="icons.svg#plus"></use>
+                    </svg>
+                    <svg class="accordion__cross icon-28">
+                      <use xlink:href="icons.svg#cross"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="accordion__content interactive-border__content"
+                  data-accordion-target="content"
+                >
+                  <p class="accordion__text text-grey-30">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Laudantium, reprehenderit.
+                  </p>
+                  <div class="accordion__link-wrapper text-grey-20 text-medium">
+                    <span> Lorem ipsum dolor sit amet. </span>
+                    <a
+                      href="#0"
+                      class="accordion__btn-wrapper accordion__btn-wrapper--round btn"
+                    >
+                      <svg class="accordion__arrow-right icon-28">
+                        <use xlink:href="icons.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="accordion__item interactive-border"
+                data-controller="interactive-border accordion"
+              >
+                <div class="accordion__header interactive-border__content">
+                  <h3 class="accordion__title text-accent">
+                    Are the courses self-paced or do they have specific start
+                    and end dates?
+                  </h3>
+                  <button
+                    class="accordion__btn-wrapper btn"
+                    data-accordion-target="button"
+                  >
+                    <svg class="accordion__plus icon-28">
+                      <use xlink:href="icons.svg#plus"></use>
+                    </svg>
+                    <svg class="accordion__cross icon-28">
+                      <use xlink:href="icons.svg#cross"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="accordion__content interactive-border__content"
+                  data-accordion-target="content"
+                >
+                  <p class="accordion__text text-grey-30">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Laudantium, reprehenderit.
+                  </p>
+                  <div class="accordion__link-wrapper text-grey-20 text-medium">
+                    <span> Lorem ipsum dolor sit amet. </span>
+                    <a
+                      href="#0"
+                      class="accordion__btn-wrapper accordion__btn-wrapper--round btn"
+                    >
+                      <svg class="accordion__arrow-right icon-28">
+                        <use xlink:href="icons.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="accordion__item interactive-border"
+                data-controller="interactive-border accordion"
+              >
+                <div class="accordion__header interactive-border__content">
+                  <h3 class="accordion__title text-accent">
+                    Are there any prerequisites for the courses?
+                  </h3>
+                  <button
+                    class="accordion__btn-wrapper btn"
+                    data-accordion-target="button"
+                  >
+                    <svg class="accordion__plus icon-28">
+                      <use xlink:href="icons.svg#plus"></use>
+                    </svg>
+                    <svg class="accordion__cross icon-28">
+                      <use xlink:href="icons.svg#cross"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="accordion__content interactive-border__content"
+                  data-accordion-target="content"
+                >
+                  <p class="accordion__text text-grey-30">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Laudantium, reprehenderit.
+                  </p>
+                  <div class="accordion__link-wrapper text-grey-20 text-medium">
+                    <span> Lorem ipsum dolor sit amet. </span>
+                    <a
+                      href="#0"
+                      class="accordion__btn-wrapper accordion__btn-wrapper--round btn"
+                    >
+                      <svg class="accordion__arrow-right icon-28">
+                        <use xlink:href="icons.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="accordion__item interactive-border"
+                data-controller="interactive-border accordion"
+              >
+                <div class="accordion__header interactive-border__content">
+                  <h3 class="accordion__title text-accent">
+                    Can I download the course materials for offline access?
+                  </h3>
+                  <button
+                    class="accordion__btn-wrapper btn"
+                    data-accordion-target="button"
+                  >
+                    <svg class="accordion__plus icon-28">
+                      <use xlink:href="icons.svg#plus"></use>
+                    </svg>
+                    <svg class="accordion__cross icon-28">
+                      <use xlink:href="icons.svg#cross"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="accordion__content interactive-border__content"
+                  data-accordion-target="content"
+                >
+                  <p class="accordion__text text-grey-30">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Laudantium, reprehenderit.
+                  </p>
+                  <div class="accordion__link-wrapper text-grey-20 text-medium">
+                    <span> Lorem ipsum dolor sit amet. </span>
+                    <a
+                      href="#0"
+                      class="accordion__btn-wrapper accordion__btn-wrapper--round btn"
+                    >
+                      <svg class="accordion__arrow-right icon-28">
+                        <use xlink:href="icons.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    {{> footer}}
+    <script type="module" src="/src/ts/application.ts"></script>
+  </body>
 </html>
