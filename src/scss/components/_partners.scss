@@ -28,7 +28,7 @@
   position: relative;
   cursor: pointer;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 4.4rem;
   }
 
@@ -47,7 +47,7 @@
     height: calc(100% - (3rem * 2));
     background-color: $white-95;
 
-    @include breakpoint(max, 1440px) {
+    @include breakpoint(max, 1439px) {
       height: calc(100% - (2rem * 2));
     }
   }

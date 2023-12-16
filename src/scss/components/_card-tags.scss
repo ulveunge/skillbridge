@@ -24,7 +24,7 @@
   @include breakpoint(min, medium) {
     align-self: flex-start;
   }
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 0.8rem 1.4rem;
     border-radius: 0.6rem;
   }

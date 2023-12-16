@@ -9,7 +9,7 @@
 
   border-radius: inherit;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 3rem;
   }
 
@@ -33,7 +33,7 @@
 
   text-align: center;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     border-radius: 0.4rem;
     padding: 2.2rem 1rem;
   }
@@ -68,7 +68,7 @@
 
   margin-bottom: 3rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 2.4rem;
   }
 
@@ -100,7 +100,7 @@
   border: 0.1rem solid $white-95;
   border-radius: 0.8rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 1.2rem;
     column-gap: 0.8rem;
 
@@ -120,7 +120,7 @@
 
   padding: 0.6rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 0.4rem;
   }
 

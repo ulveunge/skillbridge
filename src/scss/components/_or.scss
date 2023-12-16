@@ -1,0 +1,35 @@
+.or {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+
+  @include breakpoint(max, 1439px) {
+    row-gap: 2.4rem;
+  }
+}
+
+.or__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.2rem;
+
+  @include breakpoint(max, 1439px) {
+    font-size: 1.4rem;
+  }
+}
+
+.or__text::before,
+.or__text::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $white-95;
+}
+
+.or__sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.6rem;
+}

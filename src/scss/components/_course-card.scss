@@ -8,7 +8,7 @@
 
   background-color: $white-95;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     border-radius: 1rem;
     padding: 4rem;
     row-gap: 2.4rem;
@@ -31,7 +31,7 @@
 
   @extend .scaling-image__base;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     max-height: 26.7rem;
   }
 
@@ -53,7 +53,7 @@
 .course-card__title {
   margin-bottom: 1.4rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 1rem;
   }
 }

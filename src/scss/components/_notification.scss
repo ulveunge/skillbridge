@@ -12,7 +12,7 @@
 
   background-color: $orange-50;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin: 0 2rem;
   }
 

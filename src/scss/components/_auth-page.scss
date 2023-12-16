@@ -1,0 +1,45 @@
+.auth-page {
+  margin-bottom: 15rem;
+
+  @include breakpoint(max, 1439px) {
+    margin-bottom: 10rem;
+  }
+
+  @include breakpoint(max, large) {
+    margin-bottom: 5rem;
+  }
+}
+
+.auth-page .container {
+  display: flex;
+  gap: 10rem;
+
+  margin-top: 10rem;
+
+  @include breakpoint(max, 1439px) {
+    gap: 8rem;
+
+    margin-top: 8rem;
+  }
+
+  @include breakpoint(max, large) {
+    flex-direction: column;
+    gap: 5rem;
+
+    margin-top: 5rem;
+  }
+}
+
+.auth-page__slider {
+  @include breakpoint(min, large) {
+    margin-top: 15.35rem;
+  }
+
+  @include breakpoint(min, 1440px) {
+    margin-top: 20.2rem;
+  }
+
+  @include breakpoint(max, large) {
+    order: 1;
+  }
+}

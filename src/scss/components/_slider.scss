@@ -1,0 +1,84 @@
+.slider {
+  flex-grow: 1;
+  flex-basis: 82.9rem;
+
+  @include breakpoint(max, 1439px) {
+    flex-basis: 65.9rem;
+  }
+
+  @include breakpoint(max, large) {
+    flex-basis: initial;
+  }
+
+  overflow: hidden;
+}
+
+.slider__header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6rem;
+  margin-bottom: 8rem;
+
+  @include breakpoint(max, 1439px) {
+    margin-bottom: 6rem;
+    row-gap: 0.4rem;
+  }
+
+  @include breakpoint(max, large) {
+    margin-bottom: 4rem;
+  }
+}
+
+.slider__body {
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  transform: translateX(var(--slider-x));
+
+  transition: transform 0.2s linear;
+}
+
+.slider__slides {
+  width: 100vw;
+  display: flex;
+}
+
+.slider__slide {
+  flex: 1 0 var(--slide-width);
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+
+  margin-top: 3rem;
+
+  @include breakpoint(max, 1439px) {
+    gap: 1rem;
+    margin-top: 2.4rem;
+  }
+
+  @include breakpoint(max, large) {
+    margin-top: 2rem;
+  }
+}
+
+.slider__btn {
+  padding: 1.4rem;
+
+  @include breakpoint(max, 1439px) {
+    padding: 1.2rem;
+  }
+
+  @include breakpoint(min, 1440px) {
+    border-radius: 0.8rem;
+  }
+}
+
+.slider__prev {
+  svg {
+    transform: rotate(180deg);
+  }
+}

@@ -6,7 +6,7 @@
 
   background-color: $white-95;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     border-radius: 1rem;
   }
 }
@@ -17,7 +17,7 @@
   flex-wrap: wrap;
   gap: 1.5rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     gap: 1rem;
   }
 }
@@ -30,7 +30,7 @@
 
   padding: 5rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 4rem;
   }
 
@@ -55,7 +55,7 @@
 
   padding: 3rem 5rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 2.4rem 4rem;
   }
 
@@ -69,7 +69,7 @@
   align-items: center;
   gap: 1.5rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     gap: 1rem;
   }
 }
@@ -79,7 +79,7 @@
 
   border-radius: 0.8rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     width: 5rem;
     height: 5rem;
 

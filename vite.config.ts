@@ -9,7 +9,7 @@ const routes = {
   // contact: resolve(__dirname, "contact.html"),
   ui: resolve(__dirname, "ui.html"),
   // "sign-in": resolve(__dirname, "sign-in.html"),
-  // "sign-up": resolve(__dirname, "sign-up.html"),
+  "sign-up": resolve(__dirname, "sign-up.html"),
 };
 
 export default {

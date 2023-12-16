@@ -1,0 +1,7 @@
+.testimonial-slider {
+  border-radius: 1.2rem;
+
+  @include breakpoint(max, 1439px) {
+    border-radius: 1rem;
+  }
+}

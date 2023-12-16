@@ -1,0 +1,173 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+
+  @include breakpoint(max, 1439px) {
+    row-gap: 2rem;
+  }
+}
+
+.form__block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4rem;
+
+  @include breakpoint(max, 1439px) {
+    row-gap: 1rem;
+  }
+}
+
+.form__block.error .form__error-message {
+  display: block;
+}
+
+.form__input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form__input-wrapper .form__input {
+  width: 100%;
+
+  padding-right: calc(2.4rem * 3);
+
+  @include breakpoint(max, medium) {
+    padding-right: calc(2rem * 3);
+  }
+}
+
+.form__input-wrapper.active .form__password-btn svg {
+  fill: $orange-50;
+}
+
+.form__input {
+  background-color: $white-99;
+
+  border: 0.1rem solid $white-95;
+  border-radius: 1rem;
+
+  padding: 2.4rem;
+
+  transition: border-color 0.2s ease-out;
+
+  @include breakpoint(max, 1439px) {
+    border-radius: 0.8rem;
+
+    padding: 2rem;
+  }
+}
+
+.form__input::placeholder {
+  color: $grey-40;
+}
+
+.form__input:focus,
+.form__input:focus-visible {
+  border-color: $orange-50;
+}
+
+.form__error-message {
+  display: none;
+
+  color: $fire-red;
+}
+
+.form__checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  @include breakpoint(max, 1439px) {
+    gap: 0.8rem;
+  }
+}
+
+.form__checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 3rem;
+  height: 3rem;
+
+  background-color: $white-97;
+
+  border: 0.1rem solid $white-95;
+
+  border-radius: 0.6rem;
+
+  position: relative;
+
+  @include breakpoint(max, 1439px) {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+.form__checkbox .form__input,
+.form__checkbox .form__checkbox-icon {
+  position: absolute;
+}
+
+.form__checkbox .form__input {
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+
+  z-index: 1;
+  opacity: 0;
+}
+
+.form__checkbox .form__input:checked ~ .form__checkbox-icon {
+  opacity: 1;
+}
+
+.form__checkbox .form__checkbox-icon {
+  fill: $orange-50;
+  opacity: 0;
+
+  transition: opacity 0.15s ease-out;
+}
+
+.form__btn {
+  column-gap: 1.4rem;
+  border-radius: 1rem;
+
+  @include breakpoint(max, 1439px) {
+    border-radius: 0.8rem;
+  }
+}
+
+.form__btn[disabled] {
+  background-color: $white-90;
+  cursor: default;
+}
+
+.form__password-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  position: absolute;
+  right: 2rem;
+
+  @include breakpoint(max, medium) {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.form__password-btn svg {
+  width: 100%;
+  height: 100%;
+
+  fill: $grey-30;
+
+  transition: fill 0.2s ease-out;
+}
+
+.form__password-btn:hover svg {
+  fill: $orange-50;
+}

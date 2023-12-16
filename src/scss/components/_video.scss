@@ -17,7 +17,7 @@
   aspect-ratio: 1596/790;
   border-radius: 1.2rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     aspect-ratio: 1280/649;
     border-radius: 1rem;
   }

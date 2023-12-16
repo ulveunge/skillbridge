@@ -4,7 +4,7 @@
 .courses-page__course:not(:last-of-type) {
   margin-bottom: 5rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 4rem;
   }
 
@@ -15,7 +15,7 @@
 .courses-page__course:last-of-type {
   margin-bottom: 15rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 10rem;
   }
 

@@ -1,7 +1,7 @@
 .home__introduction {
   margin-top: 10rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-top: 8rem;
   }
 
@@ -14,7 +14,7 @@
 .home__partners {
   margin-bottom: 10rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 8rem;
   }
 
@@ -27,7 +27,7 @@
 .home__pricing {
   margin-bottom: 15rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 10rem;
   }
 
@@ -48,7 +48,7 @@
 .home__testimonials {
   margin-bottom: 16.8rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 10rem;
   }
 
@@ -60,7 +60,7 @@
 .home__faq {
   margin-bottom: 14.2rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 10rem;
   }
 

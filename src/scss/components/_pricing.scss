@@ -5,7 +5,7 @@
 
   background-color: $white;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 5rem;
   }
   @include breakpoint(max, medium) {

@@ -12,7 +12,7 @@
   padding: 0 16.3rem;
   margin: 0 auto;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 0 8rem;
   }
 
@@ -36,7 +36,7 @@
   font-weight: 600;
   line-height: 1.5;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     font-size: 3.6rem;
   }
 
@@ -50,7 +50,7 @@
   font-weight: 600;
   line-height: 1.5;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     font-size: 3.8rem;
   }
 
@@ -64,7 +64,7 @@
   font-weight: 500;
   line-height: 1.5;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     font-size: 2.8rem;
   }
 
@@ -78,7 +78,7 @@
   font-weight: 600;
   line-height: 1;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     font-size: 6rem;
   }
 
@@ -92,7 +92,7 @@
   font-weight: 600;
   line-height: 1.5;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     font-size: 2rem;
   }
 
@@ -106,7 +106,7 @@
   font-weight: 700;
   line-height: 1;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     font-size: 6rem;
   }
 
@@ -120,7 +120,7 @@
   font-weight: 800;
   line-height: 1.5;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     font-size: 4rem;
   }
 
@@ -134,7 +134,7 @@
   font-weight: 400;
   line-height: 1.5;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     font-size: 1.6rem;
   }
 }
@@ -144,7 +144,7 @@
   font-weight: 500;
   line-height: 1.5;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     font-size: 1.6rem;
   }
 }
@@ -152,12 +152,26 @@
 .text-accent--bigger {
   font-size: 2.2rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     font-size: 1.8rem;
   }
 
   @include breakpoint(max, medium) {
     font-size: 1.6rem;
+  }
+}
+
+.text-small {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+  @include breakpoint(max, 1439px) {
+    font-size: 1.4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    font-size: 1.2rem;
   }
 }
 
@@ -317,7 +331,7 @@
   width: 5.4rem;
   height: 5.4rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     width: 4.4rem;
     height: 4.4rem;
   }
@@ -332,7 +346,7 @@
   width: 4.4rem;
   height: 4.4rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     width: 3.4rem;
     height: 3.4rem;
   }
@@ -343,11 +357,21 @@
   height: 3.4rem;
 }
 
+.icon-30 {
+  width: 3rem;
+  height: 3rem;
+
+  @include breakpoint(max, 1439px) {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
 .icon-28 {
   width: 2.8rem;
   height: 2.8rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     width: 2.4rem;
     height: 2.4rem;
   }
@@ -362,7 +386,7 @@
   width: 2.4rem;
   height: 2.4rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     width: 2rem;
     height: 2rem;
   }
@@ -372,7 +396,7 @@
   width: 2rem;
   height: 2rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     width: 1.6rem;
     height: 1.6rem;
   }
@@ -393,7 +417,7 @@
 
   transition: background-color 0.2s ease-out, transform 0.2s ease-out;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     font-size: 1.4rem;
   }
 
@@ -401,7 +425,7 @@
 
   padding: 1.8rem 2.4rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 1.4rem 2rem;
   }
 
@@ -443,6 +467,10 @@
   &:hover {
     background-color: $white-95;
   }
+}
+
+.btn--full {
+  width: 100%;
 }
 
 // interactive border

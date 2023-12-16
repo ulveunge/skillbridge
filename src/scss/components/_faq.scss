@@ -9,7 +9,7 @@
 
   background-color: $white;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 8rem;
     gap: 8rem;
   }
@@ -27,7 +27,7 @@
 .faq__title {
   margin-bottom: 1rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 0.8rem;
   }
 }
@@ -35,7 +35,7 @@
 .faq__text {
   margin-bottom: 5rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 4rem;
   }
 

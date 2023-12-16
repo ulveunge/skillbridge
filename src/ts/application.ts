@@ -7,6 +7,9 @@ import {
   VideoController,
   TabController,
   AccordionController,
+  SliderController,
+  ValidationController,
+  PasswordInputController,
 } from "./controllers";
 
 import { Application } from "@hotwired/stimulus";
@@ -18,3 +21,6 @@ application.register("interactive-border", InteractiveBorderController);
 application.register("video", VideoController);
 application.register("tab", TabController);
 application.register("accordion", AccordionController);
+application.register("slider", SliderController);
+application.register("validation", ValidationController);
+application.register("password", PasswordInputController);

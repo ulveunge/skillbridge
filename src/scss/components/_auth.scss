@@ -1,0 +1,51 @@
+.auth {
+  flex-grow: 1;
+  flex-basis: 66rem;
+
+  background-color: $white;
+
+  padding: 5rem;
+
+  border-radius: 1.2rem;
+
+  @include breakpoint(max, 1439px) {
+    flex-basis: 54rem;
+
+    padding: 4rem;
+
+    border-radius: 1rem;
+  }
+
+  @include breakpoint(max, large) {
+    flex-basis: 100%;
+
+    padding: 3rem;
+  }
+}
+
+.auth__header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  text-align: center;
+
+  margin-bottom: 5rem;
+
+  @include breakpoint(max, 1439px) {
+    row-gap: 0.8rem;
+
+    margin-bottom: 4rem;
+  }
+
+  @include breakpoint(max, large) {
+    margin-bottom: 3rem;
+  }
+}
+
+.auth__form {
+  margin-bottom: 3rem;
+
+  @include breakpoint(max, 1439px) {
+    margin-bottom: 2.4rem;
+  }
+}

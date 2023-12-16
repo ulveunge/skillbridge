@@ -24,7 +24,7 @@
 
   margin-bottom: 2rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     padding-left: 1.2rem;
@@ -73,7 +73,7 @@
 
   background-color: $orange-95;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     width: 4.8rem;
     height: 4.8rem;
   }
@@ -82,7 +82,7 @@
 .introduction__label {
   margin-bottom: 1rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 0.6rem;
   }
 }
@@ -90,7 +90,7 @@
 .introduction__description {
   margin-bottom: 6rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     margin-bottom: 5rem;
   }
 }

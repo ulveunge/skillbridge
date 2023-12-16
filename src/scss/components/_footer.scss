@@ -35,7 +35,7 @@
   flex-basis: 80.7rem;
   column-gap: 4rem;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     flex-wrap: 73.7rem;
   }
 

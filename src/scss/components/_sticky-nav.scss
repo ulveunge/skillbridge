@@ -21,7 +21,7 @@
 
     animation: sticky-nav-border-animaiton 1s ease-out 0.1s forwards;
 
-    @include breakpoint(max, 1440px) {
+    @include breakpoint(max, 1439px) {
       margin: 0 -8rem;
     }
 
@@ -35,7 +35,7 @@
   }
 }
 
-.sticky-nav .nav__item:not(.nav__logo):has(:not(.nav__sign-in)) {
+.sticky-nav .nav__item:not(.nav__logo, .nav__item--sign-in) {
   padding: 1.2rem 2.4rem;
 }
 

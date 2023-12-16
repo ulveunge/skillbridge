@@ -8,7 +8,7 @@
 
   background-color: $white;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     border-radius: 1rem;
     padding: 4rem;
     row-gap: 4rem;
@@ -35,7 +35,7 @@
   padding: 2rem;
   align-self: flex-end;
 
-  @include breakpoint(max, 1440px) {
+  @include breakpoint(max, 1439px) {
     padding: 1.4rem;
   }
 }
