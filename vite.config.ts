@@ -8,7 +8,7 @@ const routes = {
   // pricing: resolve(__dirname, "pricing.html"),
   // contact: resolve(__dirname, "contact.html"),
   ui: resolve(__dirname, "ui.html"),
-  "sign-in": resolve(__dirname, "sign-in.html"),
+  login: resolve(__dirname, "login.html"),
   "sign-up": resolve(__dirname, "sign-up.html"),
 };
 
