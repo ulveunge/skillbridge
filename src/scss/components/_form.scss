@@ -144,6 +144,7 @@
 .form__btn[disabled] {
   background-color: $white-90;
   cursor: default;
+  transform: none;
 }
 
 .form__password-btn {
