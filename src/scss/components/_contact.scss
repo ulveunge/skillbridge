@@ -1,0 +1,121 @@
+.contact {
+  margin-bottom: 15rem;
+
+  @include breakpoint(max, 1439px) {
+    margin-bottom: 8rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 5rem;
+  }
+}
+
+.contact__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+
+  background-color: $white;
+
+  padding: 8rem;
+  border-radius: 1.2rem;
+
+  @include breakpoint(max, 1439) {
+    gap: 6rem;
+    padding: 6rem;
+    border-radius: 1rem;
+  }
+
+  @include breakpoint(max, medium) {
+    flex-direction: column;
+
+    gap: 3rem;
+    padding: 3rem;
+  }
+}
+.contact__form {
+  flex: 1;
+
+  gap: 5rem;
+
+  @include breakpoint(max, 1439px) {
+    gap: 2.4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    gap: 2rem;
+  }
+}
+
+.contact__form .form__btn {
+  @include breakpoint(max, medium) {
+    width: 100%;
+  }
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @include breakpoint(max, 1439px) {
+    gap: 2.4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    gap: 2rem;
+  }
+}
+.contact__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  height: fit-content;
+
+  background-color: $white-99;
+  padding: 3rem;
+
+  border: 0.1rem solid $white-95;
+  border-radius: 0.8rem;
+
+  @include breakpoint(max, 1439px) {
+    gap: 1.4rem;
+    border-radius: 0.6rem;
+  }
+}
+.contact__icon-wrapper {
+  display: inline-flex;
+  order: 0;
+
+  background-color: $white-97;
+
+  padding: 1.4rem;
+
+  border: 0.1rem solid $white-95;
+  border-radius: 0.8rem;
+
+  @include breakpoint(max, 1439px) {
+    padding: 1.2rem;
+    border-radius: 0.6rem;
+  }
+
+  svg {
+    fill: $grey-15;
+    transition: fill 0.2s ease-out;
+  }
+}
+.icon-24 {
+}
+
+.contact__link {
+  order: 1;
+}
+
+.contact__link:hover ~ .contact__icon-wrapper {
+  svg {
+    fill: $orange-50;
+  }
+}

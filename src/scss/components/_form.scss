@@ -8,6 +8,25 @@
   }
 }
 
+.form__double-block-wrapper {
+  display: flex;
+  gap: 3rem;
+
+  @include breakpoint(max, 1439px) {
+    gap: 2.4rem;
+  }
+
+  @include breakpoint(max, medium) {
+    flex-direction: column;
+
+    gap: 2rem;
+  }
+
+  .form__block {
+    flex: 1;
+  }
+}
+
 .form__block {
   display: flex;
   flex-direction: column;
@@ -66,6 +85,18 @@
 .form__input:focus,
 .form__input:focus-visible {
   border-color: $orange-50;
+}
+
+.form__textarea {
+  resize: none;
+
+  height: 17rem;
+
+  outline: none;
+
+  @include breakpoint(max, 1439px) {
+    height: 13.8rem;
+  }
 }
 
 .form__error-message {
@@ -132,7 +163,15 @@
   transition: opacity 0.15s ease-out;
 }
 
+.form__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .form__btn {
+  margin: 0 auto;
+
   column-gap: 1.4rem;
   border-radius: 1rem;
 

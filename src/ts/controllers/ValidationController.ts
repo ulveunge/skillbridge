@@ -4,7 +4,7 @@ import validator from "validator";
 export default class ValidationController extends Controller<HTMLFormElement> {
   static targets = ["block", "submit"];
 
-  inputs: (HTMLInputElement | null)[] | [] = [];
+  inputs: (HTMLInputElement | HTMLTextAreaElement | null)[] | [] = [];
   errorElements: (HTMLInputElement | null)[] | [] = [];
   isValid: boolean = false;
 
@@ -13,7 +13,7 @@ export default class ValidationController extends Controller<HTMLFormElement> {
 
     if (this.hasBlockTarget) {
       this.inputs = this.blockTargets.map((blockTarget) =>
-        blockTarget.querySelector("input")
+        blockTarget.querySelector(".form__input")
       );
 
       this.inputs.forEach((input, index) => {
@@ -42,15 +42,16 @@ export default class ValidationController extends Controller<HTMLFormElement> {
     }
   }
 
-  validate(input: HTMLInputElement | null, index: number) {
+  validate(
+    input: HTMLInputElement | HTMLTextAreaElement | null,
+    index: number
+  ) {
     const { validationType: type } = input!.dataset;
     const { value } = input!;
 
     this.blockTargets[index].classList.add("touched");
 
     let isInputValid = true;
-
-    if (!type) return;
 
     switch (type) {
       case "name":
@@ -70,7 +71,14 @@ export default class ValidationController extends Controller<HTMLFormElement> {
         });
         break;
       case "checkbox":
-        isInputValid = input!.checked;
+        if (input!.getAttribute("type") === "checkbox") {
+          isInputValid = (input as HTMLInputElement).checked;
+        }
+        break;
+      case "phone":
+        isInputValid = validator.isMobilePhone(value, "any", {
+          strictMode: true,
+        });
         break;
       default:
         isInputValid = validator.isLength(value, { min: 1 });
