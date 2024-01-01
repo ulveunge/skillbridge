@@ -1,0 +1,12 @@
+.pricing-page__pricing,
+.pricing-page__faq {
+  margin-bottom: 15rem;
+
+  @include breakpoint(max, 1439px) {
+    margin-bottom: 10rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 5rem;
+  }
+}

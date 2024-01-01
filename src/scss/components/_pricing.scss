@@ -13,6 +13,16 @@
   }
 }
 
+.pricing__tab-btns {
+  margin: 0 auto 5rem;
+
+  width: fit-content;
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 4rem;
+  }
+}
+
 .pricing__tab {
   border-radius: inherit;
 
