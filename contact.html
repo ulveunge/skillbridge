@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/skillbridge/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Skillbridge - Contact
+    </title>    <script type="module" crossorigin src="/skillbridge/assets/application-382827ca.js"></script>
+    <link rel="stylesheet" href="/skillbridge/assets/application-b10433b6.css">
+  </head>
+
+  <body class="page">
+    <header class="header" data-controller="sticky-nav">
+      <div class="notification text-regular text-white">
+        <p>
+          <a class="text-link text-link--white" href="courses.html">
+            Free Courses 🔥 Sale Ends Soon, Get It Now
+          </a>
+        </p>
+        <svg class="notification__icon icon-24">
+          <use xlink:href="icons.svg#arrow-right"></use>
+        </svg>
+      </div>
+      <div class="container" data-sticky-nav-target="sticky"><nav class="nav text-regular">
+      <ul class="nav__list nav__desktop-links">
+        <li class="nav__item nav__logo logo">
+          <a href="/">
+            <svg class="icon-54" role="img">
+              <use xlink:href="icons.svg#logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/"> Home </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/courses"> Courses </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/about"> About Us </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/pricing"> Pricing </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/contact"> Contact </a>
+        </li>
+      </ul>
+      <ul class="nav__list nav__list--auth">
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/sign-up"> Sign Up </a>
+        </li>
+        <li class="nav__item nav__item--sign-in">
+          <a class="nav__sign-in btn btn--yellow text-white" href="/login">
+            Login
+          </a>
+        </li>
+      </ul>
+      <div class="nav__mobile-menu" data-controller="mobile-nav">
+        <button class="nav__mobile-menu-btn" data-action="click->mobile-nav#toggle">
+          <svg data-mobile-nav-target="icon">
+            <use class="visible" xlink:href="icons.svg#burger-menu"></use>
+            <use xlink:href="icons.svg#cross"></use>
+          </svg>
+        </button>
+        <ul class="nav__mobile-menu-content" data-mobile-nav-target="container">
+          <li>
+            <a class="text-link text-grey-15 text-link--orange-underline" href="/"> Home </a>
+          </li>
+          <li>
+            <a class="text-link text-grey-15 text-link--orange-underline" href="/courses">
+              Courses
+            </a>
+          </li>
+          <li>
+            <a class="text-link text-grey-15 text-link--orange-underline" href="/about">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a class="text-link text-grey-15 text-link--orange-underline" href="/pricing">
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a class="text-link text-grey-15 text-link--orange-underline" href="/contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav></div>
+    </header>    <div class="breakpointer"></div>
+    <main class="main contact-page text-regular">
+      <section class="contact-page__page-header page-header">
+        <div class="container">
+          <div class="page-header__body">
+            <h1 class="page-header__title text-header">Contact Us</h1>
+            <p class="page-header__description text-grey-35">
+              Welcome to SkillBridge's Pricing Plan page, where we offer two
+              comprehensive options to cater to your needs: Free and Pro. We
+              believe in providing flexible and affordable pricing options for
+              our services. Whether you're an individual looking to enhance your
+              skills or a business seeking professional development solutions,
+              we have a plan that suits you. Explore our pricing options below
+              and choose the one that best fits your requirements.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact text-regular">
+        <div class="container">
+          <div class="contact__body">
+            <form class="contact__form form" data-controller="validation">
+              <div class="form__double-block-wrapper">
+                <div class="form__block" data-validation-target="block">
+                  <label class="form__label text-medium" for="first-name"
+                    >First Name</label
+                  >
+                  <input
+                    class="form__input text-grey-30"
+                    id="first-name"
+                    data-validation-type="name"
+                    type="text"
+                    placeholder="Enter First Name"
+                  />
+                  <span class="form__error-message text-small"
+                    >Please, enter a valid first name</span
+                  >
+                </div>
+                <div class="form__block" data-validation-target="block">
+                  <label class="form__label text-medium" for="last-name"
+                    >Last Name</label
+                  >
+                  <input
+                    class="form__input text-grey-30"
+                    id="last-name"
+                    data-validation-type="name"
+                    type="text"
+                    placeholder="Enter Last Name"
+                  />
+                  <span class="form__error-message text-small"
+                    >Please, enter a valid name</span
+                  >
+                </div>
+              </div>
+              <div class="form__double-block-wrapper">
+                <div class="form__block" data-validation-target="block">
+                  <label class="form__label text-medium" for="email"
+                    >Email</label
+                  >
+                  <input
+                    class="form__input text-grey-30"
+                    id="email"
+                    data-validation-type="email"
+                    type="email"
+                    placeholder="Enter your Email"
+                  />
+                  <span class="form__error-message text-small"
+                    >Please, enter a valid email</span
+                  >
+                </div>
+                <div class="form__block" data-validation-target="block">
+                  <label class="form__label text-medium" for="phone"
+                    >Phone</label
+                  >
+                  <input
+                    class="form__input text-grey-30"
+                    id="phone"
+                    data-validation-type="phone"
+                    type="tel"
+                    placeholder="Enter Phone Number"
+                  />
+                  <span class="form__error-message text-small"
+                    >Please, enter a valid phone number starting with +
+                    sign</span
+                  >
+                </div>
+              </div>
+              <div class="form__block" data-validation-target="block">
+                <label class="form__label text-medium" for="subject"
+                  >Subject</label
+                >
+                <input
+                  class="form__input text-grey-30"
+                  id="subject"
+                  type="text"
+                  placeholder="Enter your Subject"
+                />
+                <span class="form__error-message text-small"
+                  >Please, enter a valid subject</span
+                >
+              </div>
+              <div class="form__block" data-validation-target="block">
+                <label class="form__label text-medium" for="subject"
+                  >Message</label
+                >
+                <textarea
+                  class="form__input form__textarea text-grey-30"
+                  id="subject"
+                  placeholder="Enter your Message here..."
+                ></textarea>
+                <span class="form__error-message text-small"
+                  >Please, enter a valid message</span
+                >
+              </div>
+              <div class="form__controls">
+                <button
+                  class="form__btn btn btn--yellow text-white"
+                  data-validation-target="submit"
+                  disabled="true"
+                >
+                  Send Your Message
+                </button>
+              </div>
+            </form>
+            <ul class="contact__options">
+              <li class="contact__item">
+                <a
+                  href="mailto:support@skillbridge.com"
+                  class="contact__link text-link text-grey-30"
+                >
+                  support@skillbridge.com
+                </a>
+                <div class="contact__icon-wrapper">
+                  <svg role="img" class="icon-24">
+                    <use xlink:href="icons.svg#mail"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="contact__item">
+                <a
+                  href="tel:+91 00000 00000"
+                  class="contact__link text-link text-grey-30"
+                >
+                  +91 00000 00000
+                </a>
+                <div class="contact__icon-wrapper">
+                  <svg role="img" class="icon-24">
+                    <use xlink:href="icons.svg#phone"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="contact__item">
+                <a href="#0" class="contact__link text-link text-grey-30">
+                  Some Where in the World
+                </a>
+                <div class="contact__icon-wrapper">
+                  <svg role="img" class="icon-24">
+                    <use xlink:href="icons.svg#geo"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="contact__item contact__item--social">
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                    <a class="footer__social-link icon-24" href="#0">
+                      <svg class="icon-wrapped">
+                        <use xlink:href="icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__social-link icon-24" href="#0">
+                      <svg class="icon-wrapped">
+                        <use xlink:href="icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__social-link icon-24" href="#0">
+                      <svg class="icon-wrapped">
+                        <use xlink:href="icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <span href="#0" class="text-grey-30"> Social Profiles </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer text-regular">
+      <div class="container">
+        <div class="footer__main">
+          <section class="footer__aside-section">
+            <h3 class="visually-hidden">Skillbridge footer</h3>
+            <div class="footer__logo logo">
+              <a href="/">
+                <svg role="img" class="icon-54">
+                  <use xlink:href="icons.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <svg role="img" class="icon-24">
+                  <use xlink:href="icons.svg#mail"></use>
+                </svg>
+                <a class="text-link text-grey-15" href="mailto:hello@skillbridge.com">hello@skillbridge.com</a>
+              </li>
+              <li class="footer__contact-item">
+                <svg role="img" class="icon-24">
+                  <use xlink:href="icons.svg#phone"></use>
+                </svg>
+                <a class="text-link text-grey-15" href="tel:+91 91813 23 2309">+91
+                  91813 23 2309</a>
+              </li>
+              <li class="footer__contact-item">
+                <svg role="img" class="icon-24">
+                  <use xlink:href="icons.svg#geo"></use>
+                </svg>
+                <a class="text-link text-grey-15" href="#0">Somewhere in the World</a>
+              </li>
+            </ul>
+          </section>
+          <div class="footer__main-sections">
+            <section class="footer__section">
+              <h3 class="footer__seciton-title text-semi-bold">
+                Home
+              </h3>
+              <ul class="footer__link-list">
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Benefits</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Our Courses</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Our Testimonials</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Our FAQ</a>
+                </li>
+              </ul>
+            </section>
+            <section class="footer__section">
+              <h3 class="footer__seciton-title text-semi-bold">
+                About Us
+              </h3>
+              <ul class="footer__link-list">
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Company</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Achievements</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Our Goals</a>
+                </li>
+              </ul>
+            </section>
+            <section class="footer__section">
+              <h3 class="footer__seciton-title text-semi-bold">
+                Social Profiles
+              </h3>
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a class="footer__social-link icon-24" href="#0">
+                    <svg class="icon-wrapped">
+                      <use xlink:href="icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link icon-24" href="#0">
+                    <svg class="icon-wrapped">
+                      <use xlink:href="icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link icon-24" href="#0">
+                    <svg class="icon-wrapped">
+                      <use xlink:href="icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <p class="footer__copyright text-grey-40">
+          © 2023 Skillbridge. All rights reserved.
+        </p>
+      </div>
+    </footer>    
+  </body>
+</html>

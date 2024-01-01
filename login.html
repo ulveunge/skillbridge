@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/skillbridge/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Skillbridge - Login
+    </title>    <script type="module" crossorigin src="/skillbridge/assets/application-382827ca.js"></script>
+    <link rel="stylesheet" href="/skillbridge/assets/application-b10433b6.css">
+  </head>
+
+  <body class="page">
+    <header class="header" data-controller="sticky-nav">
+      <div class="notification text-regular text-white">
+        <p>
+          <a class="text-link text-link--white" href="courses.html">
+            Free Courses 🔥 Sale Ends Soon, Get It Now
+          </a>
+        </p>
+        <svg class="notification__icon icon-24">
+          <use xlink:href="icons.svg#arrow-right"></use>
+        </svg>
+      </div>
+      <div class="container" data-sticky-nav-target="sticky"><nav class="nav text-regular">
+      <ul class="nav__list nav__desktop-links">
+        <li class="nav__item nav__logo logo">
+          <a href="/">
+            <svg class="icon-54" role="img">
+              <use xlink:href="icons.svg#logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/"> Home </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/courses"> Courses </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/about"> About Us </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/pricing"> Pricing </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/contact"> Contact </a>
+        </li>
+      </ul>
+      <ul class="nav__list nav__list--auth">
+        <li class="nav__item">
+          <a class="nav__link text-grey-15" href="/sign-up"> Sign Up </a>
+        </li>
+        <li class="nav__item nav__item--sign-in">
+          <a class="nav__sign-in btn btn--yellow text-white" href="/login">
+            Login
+          </a>
+        </li>
+      </ul>
+      <div class="nav__mobile-menu" data-controller="mobile-nav">
+        <button class="nav__mobile-menu-btn" data-action="click->mobile-nav#toggle">
+          <svg data-mobile-nav-target="icon">
+            <use class="visible" xlink:href="icons.svg#burger-menu"></use>
+            <use xlink:href="icons.svg#cross"></use>
+          </svg>
+        </button>
+        <ul class="nav__mobile-menu-content" data-mobile-nav-target="container">
+          <li>
+            <a class="text-link text-grey-15 text-link--orange-underline" href="/"> Home </a>
+          </li>
+          <li>
+            <a class="text-link text-grey-15 text-link--orange-underline" href="/courses">
+              Courses
+            </a>
+          </li>
+          <li>
+            <a class="text-link text-grey-15 text-link--orange-underline" href="/about">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a class="text-link text-grey-15 text-link--orange-underline" href="/pricing">
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a class="text-link text-grey-15 text-link--orange-underline" href="/contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav></div>
+    </header>    <div class="breakpointer"></div>
+    <main class="main auth-page text-regular">
+      <div class="container">
+        <section class="auth-page__slider slider" data-controller="slider">
+          <div class="slider__header">
+            <h2 class="slider__title text-sub-header">Students Testimonials</h2>
+            <p class="slider__description text-grey-35">
+              Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
+              eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac
+              cum eget habitasse in velit fringilla feugiat senectus in.
+            </p>
+          </div>
+          <div class="slider__body testimonial-slider">
+            <div
+              class="slider__wrapper"
+              data-slider-target="wrapper"
+              data-controller="interactive-border"
+            >
+              <div class="slider__slides" data-slider-target="slides">
+                <div class="slider__slide">
+                  <div class="testimonial-card interactive-border">
+                    <div
+                      class="testimonial-card__row testimonial-card__row--1 interactive-border__content"
+                    >
+                      <p class="testimonial-card__text text-grey-30">
+                        The web design course provided a solid foundation for
+                        me. The instructors were knowledgeable and supportive,
+                        and the interactive learning environment was engaging. I
+                        highly recommend it!
+                      </p>
+                    </div>
+                    <div
+                      class="testimonial-card__row testimonial-card__row--2 interactive-border__content"
+                    >
+                      <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar-wrapper">
+                          <img
+                            class="testimonial-card__avatar"
+                            src="/skillbridge/assets/testimonial-card__image1-aed7de6c.png"
+                            alt="Sarah L"
+                          />
+                        </div>
+                        <span
+                          class="testimonial-card__name text-medium text-grey-20"
+                          >Sarah L</span
+                        >
+                      </div>
+                      <a class="testimonial-card__btn btn btn--white-97"
+                        >Read Full Story</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="testimonial-card interactive-border">
+                    <div
+                      class="testimonial-card__row testimonial-card__row--1 interactive-border__content"
+                    >
+                      <p class="testimonial-card__text text-grey-30">
+                        The UI/UX design course exceeded my expectations. The
+                        instructor's expertise and practical assignments helped
+                        me improve my design skills. I feel more confident in my
+                        career now. Thank you!
+                      </p>
+                    </div>
+                    <div
+                      class="testimonial-card__row testimonial-card__row--2 interactive-border__content"
+                    >
+                      <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar-wrapper">
+                          <img
+                            class="testimonial-card__avatar"
+                            src="/skillbridge/assets/testimonial-card__image2-e1432cab.png"
+                            alt="Jason M"
+                          />
+                        </div>
+                        <span
+                          class="testimonial-card__name text-medium text-grey-20"
+                          >Jason M</span
+                        >
+                      </div>
+                      <a class="testimonial-card__btn btn btn--white-97"
+                        >Read Full Story</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="testimonial-card interactive-border">
+                    <div
+                      class="testimonial-card__row testimonial-card__row--1 interactive-border__content"
+                    >
+                      <p class="testimonial-card__text text-grey-30">
+                        The mobile app development course was fantastic! The
+                        step-by-step tutorials and hands-on projects helped me
+                        grasp the concepts easily. I'm now building my own app.
+                        Great course!
+                      </p>
+                    </div>
+                    <div
+                      class="testimonial-card__row testimonial-card__row--2 interactive-border__content"
+                    >
+                      <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar-wrapper">
+                          <img
+                            class="testimonial-card__avatar"
+                            src="/skillbridge/assets/testimonial-card__image3-f655b46e.png"
+                            alt="Emily R"
+                          />
+                        </div>
+                        <span
+                          class="testimonial-card__name text-medium text-grey-20"
+                          >Emily R</span
+                        >
+                      </div>
+                      <a class="testimonial-card__btn btn btn--white-97"
+                        >Read Full Story</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="testimonial-card interactive-border">
+                    <div
+                      class="testimonial-card__row testimonial-card__row--1 interactive-border__content"
+                    >
+                      <p class="testimonial-card__text text-grey-30">
+                        I enrolled in the graphic design course as a beginner,
+                        and it was the perfect starting point. The instructor's
+                        guidance and feedback improved my design abilities
+                        significantly. I'm grateful for this course!
+                      </p>
+                    </div>
+                    <div
+                      class="testimonial-card__row testimonial-card__row--2 interactive-border__content"
+                    >
+                      <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar-wrapper">
+                          <img
+                            class="testimonial-card__avatar"
+                            src="/skillbridge/assets/testimonial-card__image4-935b3ceb.png"
+                            alt="Michael K"
+                          />
+                        </div>
+                        <span
+                          class="testimonial-card__name text-medium text-grey-20"
+                          >Michael K</span
+                        >
+                      </div>
+                      <a class="testimonial-card__btn btn btn--white-97"
+                        >Read Full Story</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__controls">
+            <button
+              class="slider__btn slider__prev btn btn--white"
+              data-action="click->slider#prev"
+            >
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg class="icon-34">
+                <use xlink:href="icons.svg#arrow-right"></use>
+              </svg>
+            </button>
+            <button
+              class="slider__btn slider__next btn btn--white"
+              data-action="click->slider#next"
+            >
+              <span class="visually-hidden">Следующий слайд</span>
+              <svg class="icon-34">
+                <use xlink:href="icons.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+        <section class="auth-page__auth auth">
+          <div class="auth__header">
+            <h1 class="auth__title text-header">Login</h1>
+            <p class="auth__description text-grey-30">
+              Welcome back! Please log in to access your account.
+            </p>
+          </div>
+          <form class="auth__form form" data-controller="validation">
+            <div class="form__block" data-validation-target="block">
+              <label class="form__label text-medium" for="email">Email</label>
+              <input
+                class="form__input text-grey-30"
+                id="email"
+                data-validation-type="email"
+                type="email"
+                placeholder="Enter your Email"
+              />
+              <span class="form__error-message text-small"
+                >Please, enter a valid email</span
+              >
+            </div>
+            <div class="form__block" data-validation-target="block">
+              <label class="form__label text-medium" for="password"
+                >Password</label
+              >
+              <div class="form__input-wrapper" data-controller="password">
+                <input
+                  class="form__input text-grey-30"
+                  id="password"
+                  data-validation-type="password"
+                  data-password-target="input"
+                  type="password"
+                  placeholder="Enter your Password"
+                />
+                <button
+                  type="button"
+                  class="form__password-btn"
+                  data-action="click->password#toggleVisibility"
+                >
+                  <span class="visually-hidden">Show password</span>
+                  <svg>
+                    <use xlink:href="icons.svg#eye"></use>
+                  </svg>
+                </button>
+              </div>
+              <span class="form__error-message text-small"
+                >Password should contain at least one capital letter and one
+                number
+              </span>
+            </div>
+            <div
+              class="form__block form__block--checkbox"
+              data-validation-target="block"
+            >
+              <div class="form__checkbox-wrapper">
+                <div class="form__checkbox">
+                  <input
+                    class="form__input text-grey-30"
+                    data-validation-type="checkbox"
+                    type="checkbox"
+                    id="checkbox"
+                  />
+                  <svg class="form__checkbox-icon icon-20">
+                    <use xlink:href="icons.svg#check"></use>
+                  </svg>
+                </div>
+                <label class="form__label text-grey-40" for="checkbox"
+                  >Remember me</label
+                >
+              </div>
+            </div>
+            <div class="form__controls">
+              <button
+                class="form__btn btn btn--full btn--yellow text-white"
+                data-validation-target="submit"
+                disabled="true"
+              >
+                Login
+              </button>
+            </div>
+          </form>
+          <div class="auth__or or">
+            <div class="or__text text-grey-60">
+              <span>OR</span>
+            </div>
+            <a
+              href="#0"
+              class="form__btn btn btn--full btn--white-97 text-grey-15 text-medium"
+            >
+              <svg class="icon-30">
+                <use xlink:href="icons.svg#google"></use>
+              </svg>
+              Login with Google
+            </a>
+            <p class="or__sign-in text-grey-15">
+              <span
+                >Don't have an account?
+                <a href="/sign-up" class="text-link text-grey-15 text-medium"
+                  >Sign Up</a
+                >
+              </span>
+              <svg class="icon-20">
+                <use xlink:href="icons.svg#arrow-right-up-small"></use>
+              </svg>
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer text-regular">
+      <div class="container">
+        <div class="footer__main">
+          <section class="footer__aside-section">
+            <h3 class="visually-hidden">Skillbridge footer</h3>
+            <div class="footer__logo logo">
+              <a href="/">
+                <svg role="img" class="icon-54">
+                  <use xlink:href="icons.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <svg role="img" class="icon-24">
+                  <use xlink:href="icons.svg#mail"></use>
+                </svg>
+                <a class="text-link text-grey-15" href="mailto:hello@skillbridge.com">hello@skillbridge.com</a>
+              </li>
+              <li class="footer__contact-item">
+                <svg role="img" class="icon-24">
+                  <use xlink:href="icons.svg#phone"></use>
+                </svg>
+                <a class="text-link text-grey-15" href="tel:+91 91813 23 2309">+91
+                  91813 23 2309</a>
+              </li>
+              <li class="footer__contact-item">
+                <svg role="img" class="icon-24">
+                  <use xlink:href="icons.svg#geo"></use>
+                </svg>
+                <a class="text-link text-grey-15" href="#0">Somewhere in the World</a>
+              </li>
+            </ul>
+          </section>
+          <div class="footer__main-sections">
+            <section class="footer__section">
+              <h3 class="footer__seciton-title text-semi-bold">
+                Home
+              </h3>
+              <ul class="footer__link-list">
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Benefits</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Our Courses</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Our Testimonials</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Our FAQ</a>
+                </li>
+              </ul>
+            </section>
+            <section class="footer__section">
+              <h3 class="footer__seciton-title text-semi-bold">
+                About Us
+              </h3>
+              <ul class="footer__link-list">
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Company</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Achievements</a>
+                </li>
+                <li class="footer__link-item">
+                  <a class="text-link text-grey-35" href="#0">Our Goals</a>
+                </li>
+              </ul>
+            </section>
+            <section class="footer__section">
+              <h3 class="footer__seciton-title text-semi-bold">
+                Social Profiles
+              </h3>
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a class="footer__social-link icon-24" href="#0">
+                    <svg class="icon-wrapped">
+                      <use xlink:href="icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link icon-24" href="#0">
+                    <svg class="icon-wrapped">
+                      <use xlink:href="icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link icon-24" href="#0">
+                    <svg class="icon-wrapped">
+                      <use xlink:href="icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <p class="footer__copyright text-grey-40">
+          © 2023 Skillbridge. All rights reserved.
+        </p>
+      </div>
+    </footer>    
+  </body>
+</html>
