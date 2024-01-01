@@ -1,0 +1,26 @@
+.about-page__about:not(:last-of-type) {
+  margin-bottom: 17.7rem;
+
+  @include breakpoint(max, 1439px) {
+    margin-bottom: 10rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 5rem;
+  }
+}
+
+.about-page__banner {
+  margin-top: 8rem;
+  margin-bottom: 15rem;
+
+  @include breakpoint(max, 1439px) {
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}

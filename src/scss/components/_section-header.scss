@@ -15,7 +15,7 @@
   }
 }
 
-.section-header__description-text {
+.section-header__description-text:not(:only-child) {
   @include breakpoint(min, medium) {
     flex-basis: 73%;
   }

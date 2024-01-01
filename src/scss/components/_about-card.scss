@@ -1,0 +1,55 @@
+.about-card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $white;
+
+  padding: 5rem;
+  border-radius: 1.2rem;
+
+  @include breakpoint(max, 1439px) {
+    padding: 4rem;
+    border-radius: 1rem;
+  }
+
+  @include breakpoint(max, medium) {
+    padding: 3rem;
+  }
+}
+
+.about-card__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  align-self: flex-start;
+
+  background-color: $orange-97;
+
+  padding: 1.6rem;
+  margin-bottom: 3rem;
+
+  border-radius: 0.8rem;
+
+  border: 0.1rem solid $orange-90;
+
+  @include breakpoint(max, 1439px) {
+    padding: 1.4rem;
+    margin-bottom: 2.4rem;
+
+    border-radius: 0.6rem;
+  }
+}
+
+.about-card__title {
+  margin-top: auto;
+  margin-bottom: 1.4rem;
+
+  @include breakpoint(max, 1439px) {
+    margin-bottom: 1rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 0.6rem;
+  }
+}
