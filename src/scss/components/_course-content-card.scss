@@ -1,0 +1,103 @@
+.course-content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  background-color: $white;
+
+  padding: 5rem;
+  border-radius: 1.2rem;
+
+  @include breakpoint(max, 1439px) {
+    gap: 4rem;
+    padding: 4rem;
+    border-radius: 1rem;
+  }
+
+  @include breakpoint(max, medium) {
+    gap: 3rem;
+    padding: 3rem;
+  }
+}
+
+.course-content-card__number {
+  align-self: flex-end;
+}
+
+.course-content-card__contents {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include breakpoint(max, 1439px) {
+    gap: 1.6rem;
+  }
+}
+
+.course-content-card__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 2.4rem;
+
+  border-radius: 0.8rem;
+  border: 0.1rem solid $white-97;
+
+  width: 100%;
+  text-align: left;
+
+  transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out;
+
+  @include breakpoint(max, 1439px) {
+    padding: 2rem;
+    border-radius: 0.6rem;
+  }
+
+  @include breakpoint(max, large) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 2.4rem;
+    gap: 2.4rem;
+  }
+}
+
+.course-content-card__btn:hover {
+  border: 0.1rem solid $orange-80;
+  box-shadow: 0rem 0rem 0rem 0.4rem $orange-95;
+
+  .course-content-card__time-wrapper {
+    background-color: $orange-90;
+  }
+}
+
+.course-content-card__content-text {
+  flex: 1;
+}
+
+.course-content-card__time-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 1.2rem 1.4rem;
+
+  background-color: $white-97;
+  border-radius: 0.6rem;
+
+  transition: background-color 0.2s ease-out;
+
+  @include breakpoint(max, 1439px) {
+    padding: 1rem;
+  }
+}
+
+.courses-content-card__time {
+  @include breakpoint(max, 1439px) {
+  }
+
+  @include breakpoint(max, medium) {
+  }
+}

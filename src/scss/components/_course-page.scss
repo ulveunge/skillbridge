@@ -1,0 +1,11 @@
+.course-page__video {
+  margin-bottom: 10rem;
+
+  @include breakpoint(max, 1439px) {
+    margin-bottom: 8rem;
+  }
+
+  @include breakpoint(max, medium) {
+    margin-bottom: 5rem;
+  }
+}
