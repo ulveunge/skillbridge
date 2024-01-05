@@ -1,12 +1,12 @@
 .page-header {
-  margin: 10rem 3rem;
+  margin: 10rem 0;
 
   @include breakpoint(max, 1439px) {
-    margin: 8rem 2rem;
+    margin: 8rem 0;
   }
 
   @include breakpoint(max, medium) {
-    margin: 5rem 1.6rem;
+    margin: 5rem 0;
   }
 
   border-bottom: 0.1rem solid $white-90;
